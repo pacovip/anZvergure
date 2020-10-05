@@ -1,0 +1,16 @@
+.cs {
+
+  .btn-action {
+    i {
+      color: $darkgreyColor;
+    }
+    background-color: $lightColor;
+    &:hover i {
+      opacity: 0.7;
+    }
+  }
+}
+
+.section_gradient {
+ background-color: $colorMain2;
+}

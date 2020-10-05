@@ -1,0 +1,117 @@
+ul {
+  padding-left: 1.15rem;
+}
+
+ol {
+  padding-left: 2.15rem;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+.list-bordered {
+  padding: 0;
+  list-style: none;
+
+
+
+  li {
+    font-size: 28px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $borderColor;
+    color: rgba(31, 35, 43, 0.1);
+    margin: 0;
+  }
+  li + li {
+    border-top: none;
+  }
+  &.no-top-border > li:first-child {
+    border-top: none;
+  }
+  &.no-bottom-border > li:last-child {
+    border-bottom: none;
+  }
+  i {
+    margin-right: 15px;
+    width: 30px;
+        
+
+  }
+}
+
+.list-styled ul,
+ul.list-styled {
+  list-style: none;
+  padding: 0;
+  color: $darkgreyColor;
+  li {
+    position: relative;
+    padding-left: 20px;
+    &:before {
+      font-family: 'FontAwesome';
+      content: "\f00c";
+      font-size: 16px;
+      color: $colorMain;
+      position: relative;
+      padding-right: 15px;
+      top: -2px;
+    }
+  }
+}
+
+.menu-item {
+border-bottom: 1px solid;
+padding: 12px;
+list-style: none;
+}
+
+ul.list1 {
+  list-style: none;
+  padding: 3px 0;
+}
+
+ul, ol {
+  padding-left: 30px;
+}
+
+.list1 ol,
+ol.list1 {
+  counter-reset: li;
+  list-style: none outside none;
+  padding-left: 20px;
+}
+.list1 ol li,
+ol.list1 li {
+  position: relative;
+  padding: 5px 0 5px 25px;
+  font-weight: 400;
+  color: #1f232b;
+}
+
+.list1 ol li:before,
+ol.list1 li:before {
+  content: counter(li) ".";
+  counter-increment: li;
+  position: absolute;
+  left: 2px;
+  top: 5px;
+  font-weight: 400;
+  color: $colorMain;
+}
+
+.list-bordered1 {
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  li {
+    padding-top: 14px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #79797a;
+  }
+}

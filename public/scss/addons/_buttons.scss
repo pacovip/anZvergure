@@ -1,0 +1,96 @@
+/*
+** Buttons
+ */
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn.focus,
+.btn:focus {
+  box-shadow: 0 0 3px 0 rgba(100, 100, 100, .75);
+}
+
+.btn-secondary {
+  border-color: $borderColor;
+  color: $darkgreyColor;
+}
+
+/*color background buttons*/
+.btn-maincolor,
+.btn-maincolor2,
+.btn-maincolor3,
+.btn-darkgrey {
+  color: $lightColor;
+}
+
+.btn-color {
+  background-color: $colorMain;
+  border: 1px solid $colorMain;
+  &:hover {
+    background-color: transparent;
+    border: 1px solid $colorMain;
+    color: $colorMain;
+  }
+}
+
+.btn-maincolor2{
+  background-color: $colorMain;
+  color: #fff;
+   &:hover {
+    background-color: transparent;
+    border-color: $colorMain;
+    color: $colorMain;
+  }
+}
+
+.btn-maincolor3 {
+  background-color: $colorMain2;
+}
+
+.theme_button {
+  background-color: $colorMain;
+  color: #fff;
+   &:hover {
+    background-color: transparent;
+    border-color: $colorMain;
+    color: $colorMain;
+  }
+}
+
+.btn-darkgrey {
+  background-color: $darkgreyColor;
+  border-color: $colorMain;
+}
+
+/*color outline buttons*/
+.btn-outline-maincolor,
+.btn-outline-maincolor2,
+.btn-outline-maincolor3,
+.btn-outline-darkgrey {
+  background-color: transparent;
+}
+
+.btn-outline-maincolor {
+  color: #fff;
+  border-color: #fff;
+  min-width: 230px;
+}
+
+.btn-outline-maincolor2 {
+  color: #808080;
+  border-color: $colorMain2;
+   &:hover {
+    background-color: $colorMain2;
+    color: #fff;
+  }
+}
+
+.btn-outline-maincolor3 {
+  color: $colorMain2;
+  border-color: $colorMain2;
+}
+
+.btn-outline-darkgrey {
+  color: #1f232b;
+  border-color: rgba(0, 0, 0, 0.1);
+}

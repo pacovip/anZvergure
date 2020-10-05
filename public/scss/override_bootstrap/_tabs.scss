@@ -1,0 +1,82 @@
+/* bootstrap tabs*/
+.nav-tabs {
+  border-bottom: none;
+
+  .nav-link {
+    padding: 16px 30px 20px;
+    text-align: center;
+    min-width: 170px;
+    border-radius: 0;
+    border: 1px solid $colorMain2;
+    margin-right: 3px;
+    color: $colorMain2;
+    &:hover {
+      border-color: $colorMain2;
+      background: $colorMain2;
+      color: $lightColor;
+      transition: all 0.3s ease-in-out 0s;
+    }
+  }
+
+  .nav-item.show .nav-link,
+  .nav-link.active {
+    border-color: $colorMain2;
+    background: $colorMain2;
+    color: $lightColor;
+  }
+}
+
+.nav-link {
+  @include small-text();
+  font-weight: 500;
+  letter-spacing: -0.02em;
+
+  color: $darkgreyColor;
+  .small-tabs & {
+    padding: 10px 15px;
+  }
+}
+
+.tab-content {
+  
+  padding: 0px 60px 0;
+  border-top: 11px solid $colorMain2;
+  margin-top: -9px;
+
+
+}
+
+.tab-pane {
+  .media {
+    img {
+      max-width: 40%;
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+    h3, h4, h5 {
+      font-weight: 900;
+    }
+  }
+}
+
+.tab-active {
+  .tab-content {
+  padding: 35px 30px;
+  img {
+    margin-top: 7px;
+  }
+  }
+}
+
+@media (max-width: 548px) {
+  .nav-tabs .nav-link {
+    padding: 10px 8px 15px;
+    min-width: 100%;
+    font-size: 11px;
+  }
+  .nav-item {
+   margin-right: 3px;
+  }
+}
+

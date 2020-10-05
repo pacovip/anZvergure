@@ -1,0 +1,99 @@
+/* bootstrap collapse*/
+//unstyled
+[data-toggle="collapse"] {
+  display: inline-block;
+  position: relative;
+  padding-right: 20px;
+  margin-top: 10px;
+  &:after {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -7px;
+
+    font-size: 10px;
+    font-weight: 100;
+    font-family: 'FontAwesome';
+    content: "\f078";
+  }
+  &.collapsed {
+    &:after {
+      content: "\f054";
+    }
+  }
+}
+
+.collapse-line{
+  padding: 140px;
+}
+//cards as tabs
+[role="tablist"] {
+  .card {
+    border-radius: 0;
+    border: none;
+    background: none;
+  }
+  .card-header {
+    padding: 0;
+    background: none;
+    border: none;
+
+    a {
+      @include small-text();
+      display: block;
+      position: relative;
+      padding: 18px 50px 15px 32px;;
+      box-shadow: $boxShadow;
+      background-color: $colorMain;
+      color: $lightColor;
+     text-decoration: none;
+     &:hover {
+      opacity: 1;
+      color: $lightColor;
+     }
+      &.collapsed {
+        background-color: $colorMain2;
+        color: $lightColor;
+        &:hover {
+        color: $lightColor;
+        background-color: $colorMain;
+        text-decoration: none; 
+        opacity: 1;
+        }    
+      }
+    }
+  }
+  .card-body {
+    color: #7f7f7f;
+    padding: 32px 35px 20px;
+    border: 1px solid #373737;
+    border-top: none;
+    border-width: 1px;
+  }
+
+ [role="tablist"] 
+ .card-body .ls {
+    border: 1px solid #ddd;
+  }
+
+  .media img {
+    max-width: 80px;
+  }
+}
+.collapse-table { 
+  padding: 115px 232px 160px 117px;
+}
+
+ .info-card {
+  color: #7f7f7f;
+  padding: 32px 35px 20px;
+  border: 1px solid #ddd;
+  margin: -25px 0 0 0;
+}
+
+@media (max-width: 992px) {
+ .collapse-table {
+    padding: 50px 35px;
+  }
+}
+

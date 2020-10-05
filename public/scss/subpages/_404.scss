@@ -1,0 +1,51 @@
+/*
+** 404
+*/
+
+.error-404 {
+   h6 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 0;
+    color: #fff;
+    }
+  .page-header {
+    h3 {
+      font-size: 190px;
+      margin: 70px 0;
+      font-weight: 700; 
+      line-height: 0.6;
+      color: $colorMain;
+      @media (max-width: 400px) {
+      font-size: 145px;
+      }
+    }
+    p {
+    font-weight: 900;
+    color: #fff;
+    font-size: 24px;
+    @media (min-width: 768px) {
+      font-size: 35px;
+      }
+    }
+  }
+
+  .widget_search {
+    margin: 30px 0;
+  }
+
+  a {
+    color: #fff;
+    border-color: $colorMain2;
+    background-color: $colorMain2;
+    padding: 18px 40px 18px;
+    margin: 0;
+    min-width: 213px;
+    text-align: center;
+    &:hover {
+     border: 1px solid #fff;
+    background-color: transparent;
+    }
+  }
+}
+

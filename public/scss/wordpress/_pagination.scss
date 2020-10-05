@@ -1,0 +1,135 @@
+/*
+** WordPress Page Links and Pagination
+*/
+.page-item,
+.nav-links,
+.page-links {
+  clear: both;
+  & > span,
+  & > a {
+    border: none;
+    border-radius: 0 !important;
+    color: $lightColor;
+    background-color: $colorMain;
+    display: inline-block;
+    margin-right: 4px;
+    margin-left: 0;
+    padding: 0.5em 1.2em;
+    min-width: 3em;
+    text-align: center;
+    line-height: inherit;
+    transition: all 0.3s ease-in-out 0s;
+    &:hover {
+      background-color: #f2f2f2;
+      color: #808080;
+      text-decoration: none;
+    }
+  }
+  &.active > a,
+  & > span {
+    background-color: #f2f2f2;
+    cursor: not-allowed;
+    color: #808080;
+     &:hover {
+      background-color: $colorMain;
+      color: $lightColor;
+    }
+  }
+  .fa {
+    font-size: 10px;
+  }
+}
+
+//page and comments links smaller
+.comments-pagination,
+.page-links {
+  .page-numbers,
+  & > span,
+  a {
+    //min-width: 2em;
+  }
+}
+
+.page-links a:first-child {
+  margin-left: 1em;
+}
+
+//blog styles
+.pagination {
+  margin-top: 60px;
+  justify-content: flex-start;
+}
+
+//blog post
+.post-nav {
+  margin: 60px 0 0;
+  position: relative;
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    & > div {
+      width: 49.3%;
+      height: auto;
+      //display: flex;
+      //align-items: center;
+      //justify-content: center;
+      position: relative;
+      padding: 30px 40px;
+      text-align: right;
+
+      transition: 0.2s opacity ease;
+      &:hover {
+        opacity: 0.9;
+      }
+      @media(max-width: 1199px) {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .fa {
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
+      &:first-child {
+        text-align: left;
+        .fa {
+          right: auto;
+          left: 0;
+        }
+      }
+    }
+    .nav-subtitle {
+      @include small-text();
+      text-align: center;
+      min-width: 8em;
+      padding: 0.25em 0.8em 0.05em;
+      display: inline-block;
+    }
+    .nav-title {
+      display: block;
+    }
+
+    a {
+      @include cover();
+
+    }
+  }
+  //for .cover-image
+  .post-nav-image {
+    display: none;
+  }
+  .cover-image {
+    .post-nav-text-wrap {
+      text-align: center;
+    }
+  }
+}
+
+.next {
+  margin-left: 10px;
+   @media(max-width: 1199px) {
+     margin-left: 0;
+  }
+}
