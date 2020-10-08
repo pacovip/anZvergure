@@ -58,7 +58,7 @@
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-xl-3 col-lg-2 col-11">
-                <a href="" class="logo">
+                <a href="{{route('home', app()->getLocale() )}}" class="logo">
                     <img src="../images/logo.png" alt="">
 
                 </a>
@@ -72,7 +72,7 @@
 
                             <!-- Accueil -->
                             <li class="{{ Request::route() == route('home', app()->getLocale()) ? 'active' : '' }}">
-                            <a href="">{{ __('menu.accueil') }}</a>
+                            <a href="{{route('home', app()->getLocale() )}}">{{ __('menu.accueil') }}</a>
                             </li>
                             <!-- eof Accueil -->
 
