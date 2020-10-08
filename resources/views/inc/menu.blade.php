@@ -9,7 +9,7 @@
             </div>
 
             <div class="col-xl-3 col-lg-2 text-center text-lg-center">
-                <span class="social-icons top">
+                <span class="social-icons top" style="margin-top: -10px;">
 
                     <a href="#" class="fa fa-facebook " title="facebook"></a>
                     <a href="#" class="fa fa-twitter " title="twitter"></a>
@@ -24,13 +24,22 @@
                     <li class="dropdown-language">
                         <div class="dropdown show">
                             <a class="dropdown-toggle" href="#" role="button" id="dropdown-language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="images/flags/fr.gif" alt=""> Français
+                                <img src="{{asset('images/flags/'.app()->getLocale().'.gif')}}" alt=""> {{ ucfirst( __('menu.'.app()->getLocale()) ) }}
                             </a>
                             <div class="dropdown-menu ls" aria-labelledby="dropdown-language">
-                                <a href="#">
-                                    <img src="images/flags/fr.gif" alt=""> Français</a>
-                                <a href="#">
-                                    <img src="images/flags/us.gif" alt=""> English</a>
+                                @foreach (config('app.available_locales') as $locale)
+                                    <a
+                                        @if (app()->getLocale() == $locale)
+                                            style="font-weight: bold; "
+                                        @else
+                                            href="{{ route(\Illuminate\Support\Facades\Route::currentRouteName(), $locale) }}"
+                                        @endif
+                                    >
+                                        <img src="{{asset('images/flags/'.$locale.'.gif')}}" alt=""> {{ ucfirst( __('menu.'.$locale) ) }}
+                                    </a>
+
+                                @endforeach
+
                             </div>
                         </div>
                     </li>
@@ -44,32 +53,13 @@
 
 <!--eof topline-->
 
-<?php
-    $page = '';
-    $url = Request::url();
-    if($url != '' && count(explode('/', $url)) > 0 ) {
-        $exp_url = explode('/', $url);
-        $nbre_exp = count($exp_url)-1;
-        $page_index = $nbre_exp ;
-        // dans le cas des page "edit"
-        if( $exp_url[$page_index] == 'create' || is_numeric($exp_url[$page_index]) )
-            $page_index = $nbre_exp - 1 ;
-        if( $exp_url[$page_index] == 'edit' )
-            $page_index = $nbre_exp - 2 ;
-
-        //
-        $page = $exp_url[$page_index];
-        //echo $exp_url[$page_index];
-    }
-?>
-
 <!-- header with single Bootstrap column only for navigation and includes. Used with topline and toplogo sections. Menu toggler must be in toplogo section -->
 <header class="page_header ls s-bordertop nav-narrow justify-nav-center">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-xl-3 col-lg-2 col-11">
-                <a href="{{url('home')}}" class="logo">
-                    <img src="images/logo.png" alt="">
+                <a href="" class="logo">
+                    <img src="../images/logo.png" alt="">
 
                 </a>
             </div>
@@ -81,74 +71,74 @@
                         <ul class="nav sf-menu">
 
                             <!-- Accueil -->
-                            <li class="{{ Request::url() == url('/home') ? 'active' : '' }}">
-                                <a href="{{url('home')}}">Accueil</a>
+                            <li class="{{ Request::route() == route('home', app()->getLocale()) ? 'active' : '' }}">
+                            <a href="">{{ __('menu.accueil') }}</a>
                             </li>
                             <!-- eof Accueil -->
 
                             <!-- Présentation -->
                             <li>
-                                <a href="#">A-Propos</a>
+                                <a href="#">{{ __('menu.apropos') }}</a>
                                 <ul>
                                     <li>
-                                        <a href="{{url('about-us')}}">Présenation</a>
+                                        <a href="{{route('about-us', app()->getLocale() )}}">{{ __('menu.presenation') }}</a>
                                     </li>
                                     <li>
-                                        <a href="{{url('consultant')}}">Consultants</a>
+                                        <a href="{{route('consultant', app()->getLocale() )}}">{{ __('menu.consultants') }}</a>
                                     </li>
                                     <li>
-                                        <a href="{{url('policy')}}">Politique qualité</a>
+                                        <a href="{{route('policy', app()->getLocale() )}}">{{ __('menu.politiquequalite') }}</a>
                                     </li>
                                 </ul>
                             </li>
                             <!-- eof Présentation -->
                             <!-- Services -->
                             <li>
-                                <a href="#">Secteurs Couverts</a>
+                                <a href="#">{{ __('menu.secteurcouvert') }}</a>
                                 <ul>
                                     <li>
-                                        <a href="{{url('/pme')}}">PME</a>
+                                        <a href="">PME</a>
                                     </li>
                                     <li>
-                                        <a href="{{url('/tpme')}}">TPME</a>
+                                        <a href="">TPME</a>
                                     </li>
                                     <li>
-                                        <a href="{{url('etpu')}}">Entreprises Unipersonnelles</a>
+                                        <a href="">Entreprises Unipersonnelles</a>
                                     </li>
                                     <li>
-                                        <a href="{{url('/cabinet')}}">Cabinets</a>
+                                        <a href="">Cabinets</a>
                                     </li>
                                     <li>
-                                        <a href="{{url('/ong')}}">ONG</a>
+                                        <a href="">ONG</a>
                                     </li>
                                     <li>
-                                        <a href="{{url('/organisation')}}">Organismes</a>
+                                        <a href="#">Organismes</a>
                                     </li>
                                 </ul>
                             </li>
 
                             <!-- offres -->
                             <li>
-                                <a href="#">Nos Offres</a>
+                                <a href="#">{{ __('menu.nosoffres') }}</a>
                                 <div class="mega-menu">
                                     <ul class="mega-menu-row">
                                         <li class="mega-menu-col">
                                             <a href="#">Solutions RH</a>
                                             <ul>
                                                 <li>
-                                                    <a href="{{url('/')}}">RH Externalisée</a>
+                                                    <a href="#">RH Externalisée</a>
                                                 </li>
                                                 <li>
-                                                    <a href="{{url('/')}}">Screening & Vetting</a>
+                                                    <a href="#">Screening & Vetting</a>
                                                 </li>
                                                 <li>
-                                                    <a href="{{url('/')}}">Recrutement</a>
+                                                    <a href="#">Recrutement</a>
                                                 </li>
                                                 <li>
-                                                    <a href="{{url('/')}}">Conseil & Assistance RH</a>
+                                                    <a href="#">Conseil & Assistance RH</a>
                                                 </li>
                                                 <li>
-                                                    <a href="header5.html">Fiches de poste</a>
+                                                    <a href="#">Fiches de poste</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -156,22 +146,22 @@
                                             <a href="#">Gestion administrative</a>
                                             <ul>
                                                 <li>
-                                                    <a href="{{url('/')}}">Conseils</a>
+                                                    <a href="#">Conseils</a>
                                                 </li>
                                                 <li>
-                                                    <a href="{{url('/')}}">Plan de restructuration</a>
+                                                    <a href="#">Plan de restructuration</a>
                                                 </li>
                                                 <li>
-                                                    <a href="{{url('/')}}">Rédaction documentaire</a>
+                                                    <a href="#">Rédaction documentaire</a>
                                                 </li>
                                                 <li>
-                                                    <a href="{{url('/')}}">Gestion Administrative</a>
+                                                    <a href="#">Gestion Administrative</a>
                                                 </li>
                                                 <li>
-                                                    <a href="{{url('/')}}">Gestions de contrats</a>
+                                                    <a href="#">Gestions de contrats</a>
                                                 </li>
                                                 <li>
-                                                    <a href="{{url('/')}}">Représentation</a>
+                                                    <a href="#">Représentation</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -179,10 +169,10 @@
                                             <a href="#">Gestion de Paie</a>
                                             <ul>
                                                 <li>
-                                                    <a href="{{url('/')}}">Gestion externe de la paie </a>
+                                                    <a href="#">Gestion externe de la paie </a>
                                                 </li>
                                                 <li>
-                                                    <a href="{{url('/')}}">Grilles salariales </a>
+                                                    <a href="#">Grilles salariales </a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -190,10 +180,10 @@
                                             <a href="#">Formations</a>
                                             <ul>
                                                 <li>
-                                                    <a href="{{url('/')}}">Plan de formation</a>
+                                                    <a href="#">Plan de formation</a>
                                                 </li>
                                                 <li>
-                                                    <a href="{{url('/')}}">Conseils & Assistances</a>
+                                                    <a href="#">Conseils & Assistances</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -202,8 +192,8 @@
                             </li>
 
                             <!-- contacts -->
-                            <li class="{{ Request::url() == url('/contact') ? 'active' : '' }}">
-                                <a href="{{url('contact')}}">Contacts</a>
+                            <li class="{{ Request::route() == route('contact', app()->getLocale()) ? 'active' : '' }}">
+                                <a href="{{route('contact', app()->getLocale() )}}">{{ __('menu.contacts') }}</a>
                             </li>
                             <!-- eof contacts -->
 

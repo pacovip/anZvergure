@@ -61,7 +61,7 @@
                     <div class="row">
                         <div class="col-xl-4 col-lg-5 col-md-5 col-xs-12">
                             <div class="item-media cover-image">
-                                <img src="images/team/01.jpg" alt="">
+                                <img src="../images/team/01.jpg" alt="">
                                 <div class="media-links">
                                     <a class="abs-link" title="" href="event-single-right.html"></a>
                                 </div>
@@ -100,7 +100,7 @@
                     <div class="row">
                         <div class="col-xl-4 col-lg-5 col-md-5 col-xs-12">
                             <div class="item-media cover-image">
-                                <img src="images/team/02.jpg" alt="">
+                                <img src="../images/team/02.jpg" alt="">
                                 <div class="media-links">
                                     <a class="abs-link" title="" href="event-single-right.html"></a>
                                 </div>
@@ -139,7 +139,7 @@
                     <div class="row">
                         <div class="col-xl-4 col-lg-5 col-md-5 col-xs-12">
                             <div class="item-media cover-image">
-                                <img src="images/team/03.jpg" alt="">
+                                <img src="../images/team/03.jpg" alt="">
                                 <div class="media-links">
                                     <a class="abs-link" title="" href="event-single-right.html"></a>
                                 </div>
@@ -178,7 +178,7 @@
                     <div class="row">
                         <div class="col-xl-4 col-lg-5 col-md-5 col-xs-12">
                             <div class="item-media cover-image">
-                                <img src="images/team/04.jpg" alt="">
+                                <img src="../images/team/04.jpg" alt="">
                                 <div class="media-links">
                                     <a class="abs-link" title="" href="event-single-right.html"></a>
                                 </div>
@@ -217,7 +217,7 @@
                     <div class="row">
                         <div class="col-xl-4 col-lg-5 col-md-5 col-xs-12">
                             <div class="item-media cover-image">
-                                <img src="images/team/05.jpg" alt="">
+                                <img src="../images/team/05.jpg" alt="">
                                 <div class="media-links">
                                     <a class="abs-link" title="" href="event-single-right.html"></a>
                                 </div>
@@ -256,7 +256,7 @@
                     <div class="row">
                         <div class="col-xl-4 col-lg-5 col-md-5 col-xs-12">
                             <div class="item-media cover-image">
-                                <img src="images/team/06.jpg" alt="">
+                                <img src="../images/team/06.jpg" alt="">
                                 <div class="media-links">
                                     <a class="abs-link" title="" href="event-single-right.html"></a>
                                 </div>

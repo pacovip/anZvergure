@@ -63,7 +63,7 @@
                     <div class="item-media post-thumbnail">
                         <div class="embed-responsive embed-responsive-3by2">
                             <a class="embed-placeholder">
-                                <img src="images/img_03.jpg" alt="">
+                                <img src="../images/img_03.jpg" alt="">
                             </a>
                         </div>
                     </div>

@@ -5,7 +5,7 @@
     <ul class="media-list darklinks">
         <li class="media">
             <a class="media-left" href="{{url('/news/1')}}">
-                <img src="images/widget_02.jpg" alt="">
+                <img src="../images/widget_02.jpg" alt="">
             </a>
             <div class="media-body">
                 <h4>
@@ -20,7 +20,7 @@
 
         <li class="media">
             <a class="media-left" href="{{url('/news/2')}}">
-                <img src="images/widget_01.jpg" alt="">
+                <img src="../images/widget_01.jpg" alt="">
             </a>
             <div class="media-body">
                 <h4>
@@ -35,7 +35,7 @@
 
         <li class="media">
             <a class="media-left" href="{{url('/news/3')}}">
-                <img src="images/widget_03.jpg" alt="">
+                <img src="../images/widget_03.jpg" alt="">
             </a>
             <div class="media-body">
                 <h4>
