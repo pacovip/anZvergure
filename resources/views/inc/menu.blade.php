@@ -1,7 +1,6 @@
-<!-- template sections -->
 
 <!--topline section visible only on small screens|-->
-<section class="page_topline ls ms c-my-10 s-py-15">
+<section class="page_topline ls ms c-my-10- s-py-2">
     <div class="container-fluid">
         <div class="row align-items-right text-right">
 
@@ -23,7 +22,7 @@
 
                     <li class="dropdown-language">
                         <div class="dropdown show">
-                            <a class="dropdown-toggle" href="#" role="button" id="dropdown-language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="dropdown-toggle text-white-xx" href="#" role="button" id="dropdown-language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img src="{{asset('images/flags/'.app()->getLocale().'.gif')}}" alt=""> {{ ucfirst( __('menu.'.app()->getLocale()) ) }}
                             </a>
                             <div class="dropdown-menu ls" aria-labelledby="dropdown-language">
@@ -57,13 +56,17 @@
 <header class="page_header ls s-bordertop nav-narrow justify-nav-center">
     <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-xl-3 col-lg-2 col-11">
-                <a href="{{route('home', app()->getLocale() )}}" class="logo">
-                    <img src="../images/logo.png" alt="">
-
-                </a>
+            <div class="col-xl-3 col-lg-4 col-md-5 col-11">
+                <div class="text-left">
+                    <div class="header_logo_left text-left">
+                        <a href="{{route('home', app()->getLocale() )}}" class="logo">
+                            <img src="{{asset('images/logo.png')}}" alt="">
+                        </a>
+                    </div>
+                    <!-- eof .header_left_logo -->
+                </div>
             </div>
-            <div class="col-xl-9 col-lg-10 col-1 text-sm-center">
+            <div class="col-xl-9 col-lg-8 col-md-7 col-1 text-sm-center">
 
                 <div class="nav-wrap">
                     <!-- main nav start -->
@@ -71,22 +74,22 @@
                         <ul class="nav sf-menu">
 
                             <!-- Accueil -->
-                            <li class="{{ Request::route() == route('home', app()->getLocale()) ? 'active' : '' }}">
+                            <li class="{{ Request::url() == url(app()->getLocale().'/home') ? 'active' : '' }} {{ Request::url() == url(app()->getLocale()) ? 'active' : '' }} ">
                             <a href="{{route('home', app()->getLocale() )}}">{{ __('menu.accueil') }}</a>
                             </li>
                             <!-- eof Accueil -->
 
                             <!-- Présentation -->
-                            <li>
+                            <li class="{{ Request::url() == url(app()->getLocale().'/about-us') ? 'active' : '' }} {{ Request::url() == url(app()->getLocale().'/consultant') ? 'active' : '' }} {{ Request::url() == url(app()->getLocale().'/policy') ? 'active' : '' }} ">
                                 <a href="#">{{ __('menu.apropos') }}</a>
                                 <ul>
-                                    <li>
+                                    <li class="{{ Request::url() == url(app()->getLocale().'/about-us') ? 'active' : '' }} ">
                                         <a href="{{route('about-us', app()->getLocale() )}}">{{ __('menu.presenation') }}</a>
                                     </li>
-                                    <li>
+                                    <li class="{{ Request::url() == url(app()->getLocale().'/consultant') ? 'active' : '' }} ">
                                         <a href="{{route('consultant', app()->getLocale() )}}">{{ __('menu.consultants') }}</a>
                                     </li>
-                                    <li>
+                                    <li class="{{ Request::url() == url(app()->getLocale().'/policy') ? 'active' : '' }} ">
                                         <a href="{{route('policy', app()->getLocale() )}}">{{ __('menu.politiquequalite') }}</a>
                                     </li>
                                 </ul>
@@ -192,7 +195,7 @@
                             </li>
 
                             <!-- contacts -->
-                            <li class="{{ Request::route() == route('contact', app()->getLocale()) ? 'active' : '' }}">
+                            <li class="{{ Request::url() == url(app()->getLocale().'/contact') ? 'active' : '' }}">
                                 <a href="{{route('contact', app()->getLocale() )}}">{{ __('menu.contacts') }}</a>
                             </li>
                             <!-- eof contacts -->

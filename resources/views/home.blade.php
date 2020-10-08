@@ -183,7 +183,8 @@
                         <p>
                             ANzVERGURE est d'une entreprise spécialisée en Gestion Externalisée des Ressources Humaines, créé en 2020 par des acteurs très expérimentés de la Gestion des Ressources Humaines en Afrique.
                             <br>
-                            Après plus 22 années passés à sillonner toute l’Afrique et une partie du Monde, en travaillant pour diverses multinationales opérant aussi bien dans le GSM, les Télécommunications, la sécurité, les ventes d’engins de BTP qu’en cabinet d’Avocat et dans les Organisations internationales.
+                            Après plus 22 années passés à sillonner toute l’Afrique et une partie du Monde, en travaillant pour diverses multinationales opérant aussi bien dans le GSM, les Télécommunications, la sécurité, les ventes d’engins de BTP qu’en cabinet d’Avocat et dans les Organisations internationales
+                            <a href="{{route('about-us', app()->getLocale() )}}">...</a>
                         </p>
                     </div>
                     <div class="icons-list">
@@ -225,10 +226,10 @@
     <section class="icon-boxed teaser-box ls s-py-lg-130 c-my-lg-10 s-parallax">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 animate" data-animation="slideInLeft">
                     <div class="icon-box text-center hero-bg box-shadow">
                         <div class="teaser-icon icon-styled bg-maincolor3">
-                            <i class="fa fa-unlock-alt"></i>
+                            <i class="fa fa-briefcase"></i>
                         </div>
                         <h3>
                             <a href="#">Management Organisationnel</a>
@@ -238,10 +239,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 animate" data-animation="slideInLeft">
                     <div class="icon-box text-center hero-bg box-shadow">
                         <div class="teaser-icon icon-styled bg-maincolor3">
-                            <i class="fa fa-cloud"></i>
+                            <i class="fa fa-credit-card-alt"></i>
                         </div>
                         <h3>
                             <a href="#">Suivi Administratif & de la Paie</a>
@@ -251,10 +252,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 animate" data-animation="slideInLeft">
                     <div class="icon-box text-center hero-bg box-shadow">
                         <div class="teaser-icon icon-styled bg-maincolor3">
-                            <i class="fa fa-database"></i>
+                            <i class="fa fa-address-card-o"></i>
                         </div>
                         <h3>
                             <a href="#">Développement Ressources Humaines</a>
@@ -264,10 +265,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 animate" data-animation="slideInRight">
                     <div class="icon-box text-center hero-bg box-shadow">
                         <div class="teaser-icon icon-styled bg-maincolor3">
-                            <i class="fa fa-unlock-alt"></i>
+                            <i class="fa fa-external-link"></i>
                         </div>
                         <h3>
                             <a href="#">Externalisation des Ressources Humaines</a>
@@ -277,10 +278,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 animate" data-animation="slideInRight">
                     <div class="icon-box text-center hero-bg box-shadow">
                         <div class="teaser-icon icon-styled bg-maincolor3">
-                            <i class="fa fa-unlock-alt"></i>
+                            <i class="fa fa-assistive-listening-systems"></i>
                         </div>
                         <h3>
                             <a href="#">Formation <br>&nbsp;</a>
@@ -290,10 +291,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 animate" data-animation="slideInRight">
                     <div class="icon-box text-center hero-bg box-shadow">
                         <div class="teaser-icon icon-styled bg-maincolor3">
-                            <i class="fa fa-unlock-alt"></i>
+                            <i class="fa fa-tasks"></i>
                         </div>
                         <h3>
                             <a href="#">Suivi des Projets <br>&nbsp;</a>

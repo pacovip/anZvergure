@@ -25,12 +25,12 @@ Background color for dark muted section (.ds.ms): #252525
 Border colors for elements in light section (and .bordered elements): #e1e1e1, rgba(0, 0, 0, 0.1)
 Background color for elements in light section (.hero-bg): #f5f5f5
 
-Dark section (.ds) colors: 
+Dark section (.ds) colors:
 Text color in dark section: #9a9a9a
 Border colors for elements in dark section: #454545
 Background color for elements in dark section (.hero-bg): rgba(255, 255, 255, 0.05)
 
-Color section (.cs) colors: 
+Color section (.cs) colors:
 Background color for elements in color section: rgba(255, 255, 255, 0.1)
 Border color for elements in color section: rgba(255, 255, 255, 0.15)
 
@@ -2578,7 +2578,7 @@ R
 
 */
 /*
-	
+
 	1. Buttons
 
  */
@@ -2875,7 +2875,7 @@ a.pswp__share--download:hover {
 }
 
 /*
-	
+
 	4. Caption
 
  */
@@ -3067,7 +3067,7 @@ a.pswp__share--download:hover {
 }
 
 /*
-	
+
 	6. Additional styles
 
  */
@@ -3214,8 +3214,8 @@ a.pswp__share--download:hover {
 	margin-top: 0;
 }
 
-/* 
-** Time Table 
+/*
+** Time Table
 */
 #timetable span {
 	display: block;
@@ -3254,7 +3254,7 @@ a.pswp__share--download:hover {
 	color: #fff;
 }
 
-/* 
+/*
 ** toTop
 */
 #toTop {
@@ -13985,18 +13985,20 @@ a img.aligncenter {
 	margin-top: 2px;
 }
 
-/*logo*/
+/*logo
+display: -webkit-box;
+display: flex;
+display: -ms-flexbox;
+*/
 a.logo {
 	align-items: center;
 	-webkit-box-align: center;
-	display: -webkit-box;
-	display: flex;
-	display: -ms-flexbox;
+
 	-ms-flex-align: center;
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 1.2;
-	padding: 14px 0 14px 0;
+	padding: 8px 0 8px 0;
 	text-decoration: none;
 	text-transform: uppercase;
 }
@@ -14500,7 +14502,7 @@ body.active-side-header.slide-right .page_header_side {
 	}
 }
 
-/* 
+/*
 ** Intro Section Styles
 */
 .page_slider {
@@ -15829,7 +15831,7 @@ h4.entry-title {
 	}
 }
 
-/* 
+/*
 ** Template Specific Styles
 */
 
@@ -16829,7 +16831,7 @@ footer .media a:hover {
 	background: linear-gradient(#55bce7, #736fb3);
 	-webkit-background-clip: text;
 	float: left;
-	font-size: 140px;
+	font-size: 90px;
 	font-weight: 700;
 	letter-spacing: -0.1em;
 	line-height: 0.9;
@@ -16840,13 +16842,14 @@ footer .media a:hover {
 
 @media (max-width: 479px) {
 	.about .heading-about h2 {
-		font-size: 70px;
+        font-size: 60px;
+        padding-left: 10px;
 	}
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
 	.about .heading-about h2 {
-		font-size: 100px;
+		font-size: 65px;
 	}
 }
 
