@@ -1,0 +1,39 @@
+<?php
+
+return [
+    'slider_1_text' => "Profitez des services compétitifs",
+    'slider_1_subtext' => "D'externalisation <br> des RH",
+    'slider_2_text' => "Optez pour la performance et",
+    'slider_2_subtext' => "ANzVERGURE <br> S'OCCUPE DE VOS EXTRA",
+    'slider_3_text' => "Nous améliorons la productivité de votre personnel",
+    'slider_3_subtext' => "DES FORMATIONS <br> SUR MESURE",
+    'slider_btn' => "En savoir plus",
+    'appeleznous' => "Appelez-nous",
+    'noshoraires' => "Nos Horaires",
+    'horairesbureau' => "Lun-Ven : 8h:00 - 18h:00",
+    'anzvergure' => "ANzVERGURE",
+    'anzvergure_description' => "ANzVERGURE est d'une entreprise spécialisée en Gestion Externalisée des Ressources Humaines, créé en 2020 par des acteurs très expérimentés de la Gestion des Ressources Humaines en Afrique et dans le monde ayant exercés dans  diverses multinationales opérant aussi bien dans le GSM, les Télécommunications, la sécurité, les ventes d’engins de BTP qu’en cabinet d’Avocat et dans les Organisations internationales.",
+    'anzvergure_description_2' => "est d'une entreprise spécialisée en Gestion Externalisée des Ressources Humaines, créé en 2020 par des acteurs très expérimentés de la Gestion des Ressources Humaines en Afrique et dans le monde ayant exercés dans  diverses multinationales opérant aussi bien dans le GSM, les Télécommunications, la sécurité, les ventes d’engins de BTP qu’en cabinet d’Avocat et dans les Organisations internationales.",
+    'entreprisescli' => "Entreprises clientes",
+    'programmescoop' => "Programmes de coopération",
+    'coursformations' => "Cours & Formations",
+    'partenairesstrat' => "Partenaires stratégiques",
+    'suiviadm_subtexte' => "Working with customers making 100-40,000 hires per annum",
+    'suivimanag_subtexte' => "Cloud-based services can offer our customers single tenant dedicated environments",
+    'suiviproj_subtexte' => "All of our customers' data is validated. We build accurate data banks for reporting",
+    'suividevrh_subtexte' => "Cloud-based services can offer our customers single tenant dedicated environments",
+    'suivipaie_subtexte' => "Cloud-based services can offer our customers single tenant dedicated environments",
+    'envoyer' => "Envoyer",
+    'votrecv' => "Votre CV",
+    'votredomaine' => "Votre domaine",
+    'joindrecv' => "Joindre votre CV",
+    'commentaire' => "Commentaire",
+    'nomcomplet' => "Nom complet",
+    'et' => "et",
+    'lienssociaux' => "Liens sociaux",
+
+
+
+
+
+];

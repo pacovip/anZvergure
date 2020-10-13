@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('page_title')
-    Nos Consultants | www.anzvergure.com
+{{ __('menu.nosconsultants')}} | www.anzvergure.com
 @stop
 
 @section('page_slider')
@@ -15,20 +15,22 @@
                 <div class="col-md-12 text-center">
 
                     <h1 class="">
-                        Nos Consultants
+                        {{ __('menu.nosconsultants')}}
                     </h1>
 
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
-                            <a href="{{url('/')}}">Accueil</a>
+                            <a href="{{url('/')}}">
+                                {{ __('menu.accueil')}}
+                            </a>
                         </li>
 
                         <li class="breadcrumb-item">
-                            A-Propos
+                            {{ __('menu.apropos')}}
                         </li>
 
                         <li class="breadcrumb-item active">
-                            Nos Consultants
+                            {{ __('menu.nosconsultants')}}
                         </li>
 
                     </ol>
@@ -48,249 +50,57 @@
 
 @section('page_content')
 
-
-
-<section class="ls s-py-50">
+<section class="ls s-py-50 c-gutter-60">
     <div class="container">
-        <div class="d-none d-lg-block divider-70"></div>
+        <div class="row">
 
-        <div class="row c-gutter-60">
+            <div class="d-none d-lg-block divider-50"></div>
 
             <main class="col-lg-7 col-xl-8">
-                <article class="events post side-item content-padding bordered">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-5 col-md-5 col-xs-12">
-                            <div class="item-media cover-image">
-                                <img src="../images/team/01.jpg" alt="">
-                                <div class="media-links">
-                                    <a class="abs-link" title="" href="event-single-right.html"></a>
-                                </div>
-                            </div>
-                        </div>
+                <article class="vertical-item post type-post status-publish format-standard has-post-thumbnail box">
 
-                        <div class="col-xl-8 col-lg-7 col-md-6 col-xs-12">
-                            <div class="item-content">
-
-                                <h3>
-                                    <a>Gilber Magna</a>
-                                </h3>
-
-                                <p class="team-text ls color-main">
-                                    Expert Assurance Qualité
-                                </p>
-
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt sodales sapien vel fringilla.
-                                </p>
-
-                                <p class="social-icon-single">
-
-                                    <a href="#" class="fa fa-facebook" title="facebook"></a>
-                                    <a href="#" class="fa fa-twitter" title="twitter"></a>
-                                    <a href="#" class="fa fa-google" title="google"></a>
-
-                                </p>
-
-                            </div>
+                    <!-- .post-thumbnail -->
+                    <div class="item-media post-thumbnail">
+                        <div class="embed-responsive- embed-responsive-3by2-">
+                            <img src="{{asset('images/consult.jpg')}}" alt="Consultants">
                         </div>
                     </div>
-                </article>
 
-                <article class="events post side-item content-padding bordered">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-5 col-md-5 col-xs-12">
-                            <div class="item-media cover-image">
-                                <img src="../images/team/02.jpg" alt="">
-                                <div class="media-links">
-                                    <a class="abs-link" title="" href="event-single-right.html"></a>
-                                </div>
-                            </div>
+                    <div class="item-content">
+                        <div class="entry-content">
+                            <p>
+                                {{ __('consultant.texte')}}
+                            </p>
+
+                            <ul class="list1">
+                                <li>
+                                    <i class="color-main fa fa-check"></i>
+                                    {{ __('consultant.li_1')}}
+                                </li>
+                                <li>
+                                    <i class="color-main fa fa-check"></i>
+                                    {{ __('consultant.li_2')}}
+                                </li>
+                                <li>
+                                    <i class="color-main fa fa-check"></i>
+                                    {{ __('consultant.li_3')}}
+                                </li>
+                                <li>
+                                    <i class="color-main fa fa-check"></i>
+                                    {{ __('consultant.li_4')}}
+                                </li>
+                                <li>
+                                    <i class="color-main fa fa-check"></i>
+                                    {{ __('consultant.li_5')}}
+                                </li>
+                            </ul>
+
                         </div>
+                        <!-- .entry-content -->
 
-                        <div class="col-xl-8 col-lg-7 col-md-6 col-xs-12">
-                            <div class="item-content">
-
-                                <h3>
-                                    <a>Gilber Magna</a>
-                                </h3>
-
-                                <p class="team-text ls color-main">
-                                    Expert Assurance Qualité
-                                </p>
-
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt sodales sapien vel fringilla.
-                                </p>
-
-                                <p class="social-icon-single">
-
-                                    <a href="#" class="fa fa-facebook" title="facebook"></a>
-                                    <a href="#" class="fa fa-twitter" title="twitter"></a>
-                                    <a href="#" class="fa fa-google" title="google"></a>
-
-                                </p>
-
-                            </div>
-                        </div>
                     </div>
+                    <!-- .item-content -->
                 </article>
-
-                <article class="events post side-item content-padding bordered">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-5 col-md-5 col-xs-12">
-                            <div class="item-media cover-image">
-                                <img src="../images/team/03.jpg" alt="">
-                                <div class="media-links">
-                                    <a class="abs-link" title="" href="event-single-right.html"></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-8 col-lg-7 col-md-6 col-xs-12">
-                            <div class="item-content">
-
-                                <h3>
-                                    <a>Gilber Magna</a>
-                                </h3>
-
-                                <p class="team-text ls color-main">
-                                    Expert Assurance Qualité
-                                </p>
-
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt sodales sapien vel fringilla.
-                                </p>
-
-                                <p class="social-icon-single">
-
-                                    <a href="#" class="fa fa-facebook" title="facebook"></a>
-                                    <a href="#" class="fa fa-twitter" title="twitter"></a>
-                                    <a href="#" class="fa fa-google" title="google"></a>
-
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="events post side-item content-padding bordered">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-5 col-md-5 col-xs-12">
-                            <div class="item-media cover-image">
-                                <img src="../images/team/04.jpg" alt="">
-                                <div class="media-links">
-                                    <a class="abs-link" title="" href="event-single-right.html"></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-8 col-lg-7 col-md-6 col-xs-12">
-                            <div class="item-content">
-
-                                <h3>
-                                    <a>Gilber Magna</a>
-                                </h3>
-
-                                <p class="team-text ls color-main">
-                                    Expert Assurance Qualité
-                                </p>
-
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt sodales sapien vel fringilla.
-                                </p>
-
-                                <p class="social-icon-single">
-
-                                    <a href="#" class="fa fa-facebook" title="facebook"></a>
-                                    <a href="#" class="fa fa-twitter" title="twitter"></a>
-                                    <a href="#" class="fa fa-google" title="google"></a>
-
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="events post side-item content-padding bordered">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-5 col-md-5 col-xs-12">
-                            <div class="item-media cover-image">
-                                <img src="../images/team/05.jpg" alt="">
-                                <div class="media-links">
-                                    <a class="abs-link" title="" href="event-single-right.html"></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-8 col-lg-7 col-md-6 col-xs-12">
-                            <div class="item-content">
-
-                                <h3>
-                                    <a>Gilber Magna</a>
-                                </h3>
-
-                                <p class="team-text ls color-main">
-                                    Expert Assurance Qualité
-                                </p>
-
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt sodales sapien vel fringilla.
-                                </p>
-
-                                <p class="social-icon-single">
-
-                                    <a href="#" class="fa fa-facebook" title="facebook"></a>
-                                    <a href="#" class="fa fa-twitter" title="twitter"></a>
-                                    <a href="#" class="fa fa-google" title="google"></a>
-
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="events post side-item content-padding bordered">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-5 col-md-5 col-xs-12">
-                            <div class="item-media cover-image">
-                                <img src="../images/team/06.jpg" alt="">
-                                <div class="media-links">
-                                    <a class="abs-link" title="" href="event-single-right.html"></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-8 col-lg-7 col-md-6 col-xs-12">
-                            <div class="item-content">
-
-                                <h3>
-                                    <a>Gilber Magna</a>
-                                </h3>
-
-                                <p class="team-text ls color-main">
-                                    Expert Assurance Qualité
-                                </p>
-
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt sodales sapien vel fringilla.
-                                </p>
-
-                                <p class="social-icon-single">
-
-                                    <a href="#" class="fa fa-facebook" title="facebook"></a>
-                                    <a href="#" class="fa fa-twitter" title="twitter"></a>
-                                    <a href="#" class="fa fa-google" title="google"></a>
-
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-                </article>
-
             </main>
 
             <aside class="col-lg-5 col-xl-4">
@@ -303,7 +113,7 @@
 
             </aside>
 
-            <div class="d-none d-lg-block divider-70"></div>
+            <div class="d-none d-lg-block divider-110"></div>
         </div>
 
     </div>

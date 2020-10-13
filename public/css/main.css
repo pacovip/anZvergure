@@ -17121,3 +17121,12 @@ a.url.name:hover {
 select.country_to_state.country_select.form-control.select2-hidden-accessible.check {
 	height: 50px;
 }
+.text-gray {
+    color:gray;
+}
+.indice {
+    letter-spacing:1px;
+}
+.no-bordered {
+    border: none;
+}

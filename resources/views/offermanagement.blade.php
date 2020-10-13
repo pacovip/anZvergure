@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('page_title')
-{{ __('menu.politiquequalite')}} | www.anzvergure.com
+    {{ __('menu.suivimanag')}} | www.anzvergure.com
 @stop
 
 @section('page_slider')
@@ -15,7 +15,7 @@
                 <div class="col-md-12 text-center">
 
                     <h1 class="">
-                        {{ __('menu.politiquequalite')}}
+                        {{ __('menu.suivimanag')}}
                     </h1>
 
                     <ol class="breadcrumb">
@@ -26,11 +26,11 @@
                         </li>
 
                         <li class="breadcrumb-item">
-                            {{ __('menu.apropos')}}
+                            {{ __('menu.nosoffres')}}
                         </li>
 
                         <li class="breadcrumb-item active">
-                            {{ __('menu.politiquequalite')}}
+                            {{ __('menu.suivimanag')}}
                         </li>
 
                     </ol>
@@ -64,64 +64,63 @@
                     <!-- .post-thumbnail -->
                     <div class="item-media post-thumbnail">
                         <div class="embed-responsive- embed-responsive-3by2-">
-                            <img src="{{asset('images/policy.jpg')}}" alt="Consultants">
+                            <img src="{{asset('images/privatesector.jpg')}}" alt="Consultants">
                         </div>
                     </div>
 
                     <div class="item-content">
-                        <div class="entry-content">
+                        <div class="entry-content text-justify">
                             <p>
-                                {{ __('policy.texte') }}
+                                {{ __('offermanagement.texte') }}
                             </p>
 
                             <ul class="list1">
-                                <li>
+                                <li class="pb-2">
                                     <i class="color-main fa fa-check"></i>
-                                    {{ __('policy.li_1') }}
+                                    {{ __('offermanagement.li_1') }}
                                 </li>
-                                <li>
+                                <li class="pb-2">
                                     <i class="color-main fa fa-check"></i>
-                                    {{ __('policy.li_2') }}
+                                    {{ __('offermanagement.li_2') }}
                                 </li>
-                                <li>
+                                <li class="pb-2">
                                     <i class="color-main fa fa-check"></i>
-                                    {{ __('policy.li_3') }}
+                                    {{ __('offermanagement.li_3') }}
                                 </li>
-                                <li>
+                                <li class="pb-2">
                                     <i class="color-main fa fa-check"></i>
-                                    {{ __('policy.li_4') }}
+                                    {{ __('offermanagement.li_4') }}
                                 </li>
-                                <li>
+                                <li class="pb-2">
                                     <i class="color-main fa fa-check"></i>
-                                    {{ __('policy.li_5') }}
+                                    {{ __('offermanagement.li_5') }}
                                 </li>
-                                <li>
-                                    <i class="color-main fa fa-check"></i>
-                                    {{ __('policy.li_6') }}
-                                </li>
-                                <li>
-                                    <i class="color-main fa fa-check"></i>
-                                    {{ __('policy.li_7') }}
-                                </li>
-                                <li>
-                                    <i class="color-main fa fa-check"></i>
-                                    {{ __('policy.li_8') }}
-                                </li>
-                                <li>
-                                    <i class="color-main fa fa-check"></i>
-                                    {{ __('policy.li_9') }}
-                                </li>
-                                <li>
-                                    <i class="color-main fa fa-check"></i>
-                                    {{ __('policy.li_10') }}
-                                </li>
+
                             </ul>
 
+                            <ul class="list-bordered">
+                                <li class=" media media-body"> </li>
+                            </ul>
+
+                            <div class="divider-15 pb-20"></div>
                         </div>
                         <!-- .entry-content -->
 
                     </div>
                     <!-- .item-content -->
+                    <div class="col-lg-12 icons-list pb-20">
+                        <p>
+                            <i>{{ __('offermanagement.offredispo') }}</i>
+                        </p>
+                        <ul class="list-bordered">
+                            <li class="media media-body" style="border: none;">
+                                <i class="teaser-icon fa fa-briefcase"></i>
+                                <h4 class="title">
+                                    <span>{{ __('offeradministrative.alademande') }} </span>
+                                </h4>
+                            </li>
+                        </ul>
+                    </div>
                 </article>
 
             </main>

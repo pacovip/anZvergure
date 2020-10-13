@@ -3,7 +3,7 @@
 
 
 @section('page_title')
-    Accueil | www.anzvergure.com
+    {{ __('menu.accueil')}} | www.anzvergure.com
 @stop
 
 
@@ -21,18 +21,17 @@
                                     <div class="intro_layers">
                                         <div class="intro_layer" data-animation="fadeInLeft">
                                             <h3 class="intro_before_featured_word">
-                                                Profitez des services compétitifs
+                                                {{ __('home.slider_1_text') }}
                                             </h3>
                                         </div>
                                         <div class="intro_layer" data-animation="fadeInRight">
                                             <h2 class="text-uppercase intro_featured_word">
-                                                D'externalisation
-                                                <br> des RH
+                                                {!! __('home.slider_1_subtext') !!}
                                             </h2>
                                         </div>
                                         <div class="intro_layer" data-animation="fadeIn">
                                             <div class="d-inline-block">
-                                                <a href=""><button type="button" class="btn btn-outline-maincolor center-block" data-animation="fadeIn"> En savoir plus </button></a>
+                                                <a href="{{route('offer-hr', app()->getLocale())}}"><button type="button" class="btn btn-outline-maincolor center-block" data-animation="fadeIn"> {{ __('home.slider_btn') }} </button></a>
                                             </div>
                                         </div>
                                     </div>
@@ -55,18 +54,17 @@
                                     <div class="intro_layers">
                                         <div class="intro_layer" data-animation="pullUp">
                                             <h3 class="intro_before_featured_word">
-                                                Optez pour la performance et
+                                                {{ __('home.slider_2_text') }}
                                             </h3>
                                         </div>
                                         <div class="intro_layer" data-animation="pullDown">
                                             <h2 class="text-uppercase intro_featured_word">
-                                                ANzVERGURE
-                                                <br> S'OCCUPE DE VOS EXTRA
+                                                {!! __('home.slider_2_subtext') !!}
                                             </h2>
                                         </div>
                                         <div class="intro_layer" data-animation="fadeIn">
                                             <div class="d-inline-block">
-                                                <a href=""><button type="button" class="btn btn-outline-maincolor center-block" data-animation="fadeIn"> En savoir plus </button></a>
+                                                <a href="{{route('offer-management', app()->getLocale())}}"><button type="button" class="btn btn-outline-maincolor center-block" data-animation="fadeIn"> {{ __('home.slider_btn') }} </button></a>
                                             </div>
                                         </div>
                                     </div>
@@ -89,18 +87,17 @@
                                     <div class="intro_layers">
                                         <div class="intro_layer" data-animation="pullDown">
                                             <h3 class="intro_before_featured_word">
-                                                Nous améliorons la productivité de votre personnel
+                                                {{ __('home.slider_3_text') }}
                                             </h3>
                                         </div>
                                         <div class="intro_layer" data-animation="pullUp">
                                             <h2 class="text-uppercase intro_featured_word">
-                                                DES FORMATIONS
-                                                <br> SUR MESURE
+                                                {!! __('home.slider_3_subtext') !!}
                                             </h2>
                                         </div>
                                         <div class="intro_layer" data-animation="fadeIn">
                                             <div class="d-inline-block">
-                                                <a href=""><button type="button" class="btn btn-outline-maincolor center-block"> En savoir plus </button></a>
+                                                <a href="{{route('offer-hr', app()->getLocale())}}"><button type="button" class="btn btn-outline-maincolor center-block"> {{ __('home.slider_btn') }}  </button></a>
                                             </div>
                                         </div>
                                     </div>
@@ -133,30 +130,30 @@
                 <div class="col-md-4 text-center">
                     <div class="info-block">
                         <p>
-                            Appellé-nous
+                            {{__('home.appeleznous')}}
                         </p>
                         <h5>
-                            <a href="tel:+225 79 05 62 03"> +225 79 05 62 03</a>
+                            <a href="tel:{{__('contact.tel1')}}"> {{__('contact.tel1')}}</a>
                         </h5>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="info-block">
                         <p>
-                            Email
+                            {{__('contact.emailtext')}}
                         </p>
                         <h5>
-                            <a href="mailto:+225 79 05 62 03">info@anzvergure.com</a>
+                            <a href="mailto:{{__('contact.email')}}">{{__('contact.email')}}</a>
                         </h5>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="info-block">
                         <p>
-                            Nos horaires
+                            {{__('home.noshoraires')}}
                         </p>
                         <h5>
-                            Lun-Ven : 8h:00 - 18h:00
+                            {{__('home.horairesbureau')}}
                         </h5>
                     </div>
                 </div>
@@ -178,12 +175,10 @@
                 <div class="col-md-12 col-lg-6 animate" data-animation="slideInLeft">
                     <div class="heading-about">
                         <h2>
-                            ANzVERGURE
+                            {{__('home.anzvergure')}}
                         </h2>
-                        <p>
-                            ANzVERGURE est d'une entreprise spécialisée en Gestion Externalisée des Ressources Humaines, créé en 2020 par des acteurs très expérimentés de la Gestion des Ressources Humaines en Afrique.
-                            <br>
-                            Après plus 22 années passés à sillonner toute l’Afrique et une partie du Monde, en travaillant pour diverses multinationales opérant aussi bien dans le GSM, les Télécommunications, la sécurité, les ventes d’engins de BTP qu’en cabinet d’Avocat et dans les Organisations internationales
+                        <p class="text-justify">
+                            {!! __('home.anzvergure_description') !!}
                             <a href="{{route('about-us', app()->getLocale() )}}">...</a>
                         </p>
                     </div>
@@ -192,25 +187,25 @@
                             <li class=" media media-body">
                                 <i class="teaser-icon fa fa-rocket"></i>
                                 <h4 class="title">
-                                    <span>238</span> Entreprises clientes
+                                    <span>238</span> {{ __('home.entreprisescli') }}
                                 </h4>
                             </li>
                             <li class="media media-body">
                                 <i class="teaser-icon fa fa-briefcase"></i>
                                 <h4 class="title">
-                                    <span>12</span> &nbsp;Programmes de coopération
+                                    <span>12</span> {{ __('home.programmescoop') }}
                                 </h4>
                             </li>
                             <li class="media media-body">
                                 <i class="teaser-icon fa fa-graduation-cap"></i>
                                 <h4 class="title">
-                                    <span>64</span> &nbsp;Cours & Formations
+                                    <span>64</span> {{ __('home.coursformations') }}
                                 </h4>
                             </li>
                             <li class="border-bottom-0 media media-body">
                                 <i class="teaser-icon fa fa-group"></i>
                                 <h4 class="title">
-                                    <span>12</span> &nbsp;Partenaires stratégiques
+                                    <span>12</span> {{ __('home.partenairesstrat') }}
                                 </h4>
                             </li>
                         </ul>
@@ -229,54 +224,49 @@
                 <div class="col-lg-4 animate" data-animation="slideInLeft">
                     <div class="icon-box text-center hero-bg box-shadow">
                         <div class="teaser-icon icon-styled bg-maincolor3">
-                            <i class="fa fa-briefcase"></i>
-                        </div>
-                        <h3>
-                            <a href="#">Management Organisationnel</a>
-                        </h3>
-                        <p>
-                            Cloud-based services can offer our customers single tenant dedicated environments ...
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 animate" data-animation="slideInLeft">
-                    <div class="icon-box text-center hero-bg box-shadow">
-                        <div class="teaser-icon icon-styled bg-maincolor3">
-                            <i class="fa fa-credit-card-alt"></i>
-                        </div>
-                        <h3>
-                            <a href="#">Suivi Administratif & de la Paie</a>
-                        </h3>
-                        <p>
-                            Working with customers making 100-40,000 hires per annum ...
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 animate" data-animation="slideInLeft">
-                    <div class="icon-box text-center hero-bg box-shadow">
-                        <div class="teaser-icon icon-styled bg-maincolor3">
                             <i class="fa fa-address-card-o"></i>
                         </div>
                         <h3>
-                            <a href="#">Développement Ressources Humaines</a>
+                            <a href="{{ route('offer-administrative', app()->getLocale() )}}">
+                                {{ __('menu.suiviadm') }}
+                            </a>
                         </h3>
                         <p>
-                            All of our customers' data is validated. We build accurate data banks for reporting ...
+                            {!! __('home.suiviadm_subtexte') !!} ...
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 animate" data-animation="slideInRight">
+                <div class="col-lg-4 animate" data-animation="slideInLeft">
                     <div class="icon-box text-center hero-bg box-shadow">
                         <div class="teaser-icon icon-styled bg-maincolor3">
-                            <i class="fa fa-external-link"></i>
+                            <i class="fa fa-briefcase"></i>
                         </div>
                         <h3>
-                            <a href="#">Externalisation des Ressources Humaines</a>
+                            <a href="{{ route('offer-management', app()->getLocale() )}}">
+                                {{ __('menu.suivimanag') }}
+                            </a>
                         </h3>
                         <p>
-                            Cloud-based services can offer our customers single tenant dedicated environments ...
+                            {!! __('home.suivimanag_subtexte') !!} ...
                         </p>
                     </div>
+                </div>
+                <div class="col-lg-4 animate" data-animation="slideInLeft">
+                    <div class="icon-box text-center hero-bg box-shadow">
+                        <div class="teaser-icon icon-styled bg-maincolor3">
+                            <i class="fa fa-tasks"></i>
+                        </div>
+                        <h3>
+                            <a href="{{ route('offer-project', app()->getLocale() )}}">
+                                {{ __('menu.suiviproj') }}
+                            </a>
+                        </h3>
+                        <p>
+                            {!! __('home.suiviproj_subtexte') !!} ...
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-2">
                 </div>
                 <div class="col-lg-4 animate" data-animation="slideInRight">
                     <div class="icon-box text-center hero-bg box-shadow">
@@ -284,23 +274,27 @@
                             <i class="fa fa-assistive-listening-systems"></i>
                         </div>
                         <h3>
-                            <a href="#">Formation <br>&nbsp;</a>
+                            <a href="{{ route('offer-hr', app()->getLocale() )}}">
+                                {{ __('menu.suividevrh') }}
+                            </a>
                         </h3>
                         <p>
-                            Cloud-based services can offer our customers single tenant dedicated environments ...
+                            {!! __('home.suividevrh_subtexte') !!} ...
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-4 animate" data-animation="slideInRight">
                     <div class="icon-box text-center hero-bg box-shadow">
                         <div class="teaser-icon icon-styled bg-maincolor3">
-                            <i class="fa fa-tasks"></i>
+                            <i class="fa fa-credit-card-alt"></i>
                         </div>
                         <h3>
-                            <a href="#">Suivi des Projets <br>&nbsp;</a>
+                            <a href="{{ route('offer-payroll', app()->getLocale() )}}">
+                                {{ __('menu.suivipaie') }} <br>&nbsp;
+                            </a>
                         </h3>
                         <p>
-                            Cloud-based services can offer our customers single tenant dedicated environments ...
+                            {!! __('home.suivipaie_subtexte') !!} ...
                         </p>
                     </div>
                 </div>
@@ -314,10 +308,10 @@
             <div class="row">
                 <div class="col-sm-12 contact-header heading text-center">
                     <h5>
-                        Submit
+                        {{ __('home.envoyer') }}
                     </h5>
                     <h4>
-                        Candidate CV
+                        {{ __('home.votrecv') }}
                     </h4>
                 </div>
                 <div class="px-30 ds-form">
@@ -325,405 +319,48 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="col-c-mb-60 form-group has-placeholder">
-                                    <label for="name">Full Name
+                                    <label for="name">{{ __('home.nomcomplet') }}
                                         <span class="required">*</span>
                                     </label>
-                                    <input type="text" aria-required="true" size="200" value="" name="your-name" id="name" class="form-control" placeholder="Full Name">
+                                    <input type="text" aria-required="true" size="200" value="" name="your-name" id="name" class="form-control" placeholder="{{ __('home.nomcomplet') }}">
                                 </div>
                                 <div class="col-c-mb-60 form-group has-placeholder">
-                                    <label for="text">Phone number
+                                    <label for="text">{{ __('contact.telephone') }}
                                         <span class="required">*</span>
                                     </label>
-                                    <input type="text" aria-required="true" size="200" value="" name="text" id="text" class="form-control" placeholder="Phone number">
+                                    <input type="text" aria-required="true" size="200" value="" name="text" id="text" class="form-control" placeholder="{{ __('contact.telephone') }}">
                                 </div>
                                 <div class="col-c-mb-60 form-group has-placeholder">
-                                    <label for="email">Email address
+                                    <label for="email">{{ __('contact.adresseemail') }}
                                         <span class="required">*</span>
                                     </label>
-                                    <input type="email" aria-required="true" size="200" value="" name="your-email" id="email" class="form-control" placeholder="Email address">
+                                    <input type="email" aria-required="true" size="200" value="" name="your-email" id="email" class="form-control" placeholder="{{ __('contact.adresseemail') }}">
                                 </div>
                                 <div class="col-c-mb-60 form-group has-placeholder">
-                                    <label for="text">Job sector
+                                    <label for="text">{{ __('home.votredomaine') }}
                                         <span class="required">*</span>
                                     </label>
-                                    <input type="text" aria-required="true" size="200" value="" name="text" id="text" class="form-control" placeholder="Job sector">
+                                    <input type="text" aria-required="true" size="200" value="" name="text" id="text" class="form-control" placeholder="{{ __('home.votredomaine') }}">
                                 </div>
                                 <div class="col-c-mb-60 form-group">
                                     <input type="file" class="custom-file-input button" id="validatedCustomFile">
-                                    <label class="custom-file-label" for="validatedCustomFile">Attach CV</label>
+                                    <label class="custom-file-label" for="validatedCustomFile">{{ __('home.joindrecv') }}</label>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group has-placeholder">
-                                    <label for="message">Comment</label>
-                                    <textarea aria-required="true" rows="6" cols="40" name="message" id="message" class="form-control" placeholder="comment"></textarea>
+                                    <label for="message">{{ __('home.commentaire') }}</label>
+                                    <textarea aria-required="true" rows="6" cols="40" name="message" id="message" class="form-control" placeholder="{{ __('home.commentaire') }}"></textarea>
 
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group text-center">
-                                <button type="submit" id="contact_form_submit" name="contact_submit" class="button">Submit CV</button>
+                                <button type="submit" id="contact_form_submit" name="contact_submit" class="button">{{ __('home.envoyer') }}</button>
                             </div>
                         </div>
                     </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="ls s-py-lg-130 s-pt-30 s-pb-30 pt-20 main_blog">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="contact-header text-center">
-                        <h5>
-                            Our
-                        </h5>
-                        <h4>
-                            Blog Posts
-                        </h4>
-                    </div>
-                    <div class="owl-carousel pt-30" data-responsive-lg="3" data-responsive-md="2" data-responsive-sm="2" data-nav="false" data-dots="false">
-                        <article class="box vertical-item text-center content-padding padding-small bordered post type-post status-publish format-standard has-post-thumbnail">
-                            <div class="item-media post-thumbnail">
-                                <a href="#">
-                                    <img src="{{ asset('images/img_01.jpg') }}" alt="">
-                                </a>
-                            </div>
-                            <!-- .post-thumbnail -->
-                            <div class="item-content ">
-                                <header class="blog-header ">
-                                    <a href="#" rel="bookmark">
-                                        <h4>
-                                            Modernising our Talent Programmes
-                                        </h4>
-                                    </a>
-                                </header>
-                                <!-- .entry-header -->
-                                <div class="entry-content ls">
-                                    <p>The world of work has changed and the appetite for spending long periods of time…</p>
-                                </div>
-                                <!-- .entry-content -->
-                                <div class="blog-item-icons">
-                                    <div class="col-sm-4 ">
-                                        <i class="color-main fa fa-user "></i>
-                                        <a href="#">
-                                            Emma
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-4 ">
-                                        <i class="color-main fa fa-calendar"></i>
-                                        <a href="#">
-                                            August 11, 2017
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <i class="color-main fa fa-tag"></i>
-                                        <a href="#">
-                                            Post
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .item-content -->
-                        </article>
-                        <!-- #post-## -->
-                        <article class="box vertical-item text-center content-padding padding-small bordered post type-post status-publish format-standard has-post-thumbnail">
-                            <div class="item-media post-thumbnail">
-                                <a href="#">
-                                    <img src="{{ asset('images/blog-1.jpg') }}" alt="">
-                                </a>
-                            </div>
-                            <!-- .post-thumbnail -->
-                            <div class="item-content">
-                                <header class="blog-header ">
-                                    <a href="#" rel="bookmark">
-                                        <h4>
-                                            Franki goes to… The Philippines & Indonesia
-                                        </h4>
-                                    </a>
-                                </header>
-                                <!-- .entry-header -->
-                                <div class="entry-content ls">
-                                    <p>In this blog series titled ‘Franki goes to…’ we follow her travels around the world…</p>
-                                </div>
-                                <!-- .entry-content -->
-                                <div class="blog-item-icons">
-                                    <div class="col-sm-4 ">
-                                        <i class="color-main fa fa-user "></i>
-                                        <a href="#">
-                                            Emma
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-4 ">
-                                        <i class="color-main fa fa-calendar"></i>
-                                        <a href="#">
-                                            August 7, 2017
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <i class="color-main fa fa-tag"></i>
-                                        <a href="#">
-                                            Post
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .item-content -->
-                        </article>
-                        <!-- #post-## -->
-                        <article class="box vertical-item text-center content-padding padding-small bordered post type-post status-publish format-standard has-post-thumbnail">
-                            <div class="item-media post-thumbnail">
-                                <a href="#">
-                                    <img src="{{ asset('images/blog-2.jpg') }}" alt="">
-                                </a>
-                            </div>
-                            <!-- .post-thumbnail -->
-                            <div class="item-content">
-                                <header class="blog-header ">
-                                    <a href="#" rel="bookmark">
-                                        <h4>
-                                            Getting More For Your Money
-                                        </h4>
-                                    </a>
-                                </header>
-                                <!-- .entry-header -->
-                                <div class="entry-content ls">
-                                    <p>The majority of businesses will have a degree of reliance on recruitment suppliers…</p>
-                                </div>
-                                <!-- .entry-content -->
-                                <div class="blog-item-icons">
-                                    <div class="col-sm-4 ">
-                                        <i class="color-main fa fa-user "></i>
-                                        <a href="#">
-                                            Emma
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-4 ">
-                                        <i class="color-main fa fa-calendar"></i>
-                                        <a href="#">
-                                            August 6, 2017
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <i class="color-main fa fa-tag"></i>
-                                        <a href="#">
-                                            Post
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .item-content -->
-                        </article>
-                        <!-- #post-## -->
-                        <article class="box vertical-item text-center content-padding padding-small bordered post type-post status-publish format-standard has-post-thumbnail">
-                            <div class="item-media post-thumbnail">
-                                <a href="#">
-                                    <img src="{{ asset('images/blog-3.jpg') }}" alt="">
-                                </a>
-                            </div>
-                            <!-- .post-thumbnail -->
-                            <div class="item-content">
-                                <header class="blog-header ">
-                                    <a href="#" rel="bookmark">
-                                        <h4>
-                                            Post With Youtube
-                                            <br> Video
-                                        </h4>
-                                    </a>
-                                </header>
-                                <!-- .entry-header -->
-                                <div class="entry-content ls">
-                                    <p>Ribeye cupim jerky ham. Fatback sausage shoulder, bresaola boudin hamburger pork turkey</p>
-                                </div>
-                                <!-- .entry-content -->
-                                <div class="blog-item-icons">
-                                    <div class="col-sm-4 ">
-                                        <i class="color-main fa fa-user "></i>
-                                        <a href="#">
-                                            Emma
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-4 ">
-                                        <i class="color-main fa fa-calendar"></i>
-                                        <a href="#">
-                                            June 10, 2017
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <i class="color-main fa fa-tag"></i>
-                                        <a href="#">
-                                            Post
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .item-content -->
-                        </article>
-                        <!-- #post-## -->
-                        <article class="box vertical-item text-center content-padding padding-small bordered post type-post status-publish format-standard has-post-thumbnail">
-                            <div class="item-media post-thumbnail">
-                                <a href="#">
-                                    <img src="{{ asset('images/blog-4.jpg') }}" alt="">
-                                </a>
-                            </div>
-                            <!-- .post-thumbnail -->
-                            <div class="item-content">
-                                <header class="blog-header ">
-                                    <a href="#" rel="bookmark">
-                                        <h4>
-                                            Post format:
-                                            <br> Image
-                                        </h4>
-                                    </a>
-                                </header>
-                                <!-- .entry-header -->
-                                <div class="entry-content ls">
-                                    <p>Beef beef ribs pancetta sirloin tail brisket strip steak chuck swine frankfurter ham hock kielbasa</p>
-                                </div>
-                                <!-- .entry-content -->
-                                <div class="blog-item-icons">
-                                    <div class="col-sm-4 ">
-                                        <i class="color-main fa fa-user "></i>
-                                        <a href="#">
-                                            Emma
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-4 ">
-                                        <i class="color-main fa fa-calendar"></i>
-                                        <a href="#">
-                                            June 8, 2017
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <i class="color-main fa fa-tag"></i>
-                                        <a href="#">
-                                            Post
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .item-content -->
-                        </article>
-                        <!-- #post-## -->
-                        <article class="box vertical-item text-center content-padding padding-small bordered post type-post status-publish format-standard has-post-thumbnail">
-                            <div class="item-media post-thumbnail">
-                                <a href="#">
-                                    <img src="{{ asset('images/blog-1.jpg') }}" alt="">
-                                </a>
-                            </div>
-                            <!-- .post-thumbnail -->
-                            <div class="item-content">
-                                <header class="blog-header ">
-                                    <a href="#" rel="bookmark">
-                                        <h4>
-                                            Post With Carousel
-                                            <br>
-                                        </h4>
-                                    </a>
-                                </header>
-                                <!-- .entry-header -->
-                                <div class="entry-content ls">
-                                    <p>Beef beef ribs pancetta sirloin tail brisket strip steak chuck swine frankfurter ham hock kielbasa </p>
-                                </div>
-                                <!-- .entry-content -->
-                                <div class="blog-item-icons">
-                                    <div class="col-sm-4 ">
-                                        <i class="color-main fa fa-user "></i>
-                                        <a href="#">
-                                            Emma
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-4 ">
-                                        <i class="color-main fa fa-calendar"></i>
-                                        <a href="#">
-                                            june 7, 2017
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <i class="color-main fa fa-tag"></i>
-                                        <a href="#">
-                                            Post
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .item-content -->
-                        </article>
-                        <!-- #post-## -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="ds half-section collapse-section">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="image_cover image_cover_left half-image">
-                </div>
-            </div>
-            <div class="col-lg-6 collapse-table">
-                <div class="contact-header collapse-header heading pt-30">
-                    <h5>
-                        Receiving
-                    </h5>
-                    <h4>
-                        A job offer
-                    </h4>
-                </div>
-                <div id="accordion01" role="tablist">
-                    <div class="card-header" role="tab" id="collapse01_header">
-                        <h5>
-                            <a data-toggle="collapse" href="#collapse01" aria-expanded="true" aria-controls="collapse01">
-                                Be decisive
-                            </a>
-                        </h5>
-                    </div>
-                    <div id="collapse01" class="collapse show" role="tabpanel" aria-labelledby="collapse01_header" data-parent="#accordion01">
-                        <div class="card-body">
-                            Confirming your acceptance guarantees the job is yours. Usually there are other candidates in the process at this point so ensure you are committed.
-                        </div>
-                    </div>
-                    <div class="card-header" role="tab" id="collapse02_header">
-                        <h5>
-                            <a class="collapsed" data-toggle="collapse" href="#collapse02" aria-expanded="false" aria-controls="collapse02">
-                                Or take your time
-                            </a>
-                        </h5>
-                    </div>
-                    <div id="collapse02" class="collapse" role="tabpanel" aria-labelledby="collapse02_header" data-parent="#accordion01">
-                        <div class="card-body">
-                            Confirming your acceptance guarantees the job is yours. Usually there are other candidates in the process at this point so ensure you are committed.
-                        </div>
-                    </div>
-                    <div class="card-header" role="tab" id="collapse03_header">
-                        <h5>
-                            <a class="collapsed" data-toggle="collapse" href="#collapse03" aria-expanded="false" aria-controls="collapse03">
-                                Resign
-                            </a>
-                        </h5>
-                    </div>
-                    <div id="collapse03" class="collapse" role="tabpanel" aria-labelledby="collapse03_header" data-parent="#accordion01">
-                        <div class="card-body">
-                            Confirming your acceptance guarantees the job is yours. Usually there are other candidates in the process at this point so ensure you are committed.
-                        </div>
-                    </div>
-
-
-                    <div class="card-header" role="tab" id="collapse04_header">
-                        <h5>
-                            <a class="collapsed" data-toggle="collapse" href="#collapse04" aria-expanded="false" aria-controls="collapse04">
-                                Counter offers
-                            </a>
-                        </h5>
-                    </div>
-                    <div id="collapse04" class="collapse" role="tabpanel" aria-labelledby="collapse04_header" data-parent="#accordion01">
-                        <div class="card-body">
-                            Confirming your acceptance guarantees the job is yours. Usually there are other candidates in the process at this point so ensure you are committed.
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -796,8 +433,8 @@
 
     <div class="ls ms page_map" data-draggable="true" data-scrollwheel="true">
         <div class="marker">
-            <div class="marker-address">Cocody Riviera 5 Akouedo Palmeraie Rue Lot 57, Abidjan, Côte d'Ivoire </div>
-            <div class="marker-title">First Marker</div>
+            <div class="marker-address">{{ __('contact.adr') }} </div>
+            <div class="marker-title">{{ __('contact.pmarker') }} </div>
             <div class="marker-description">
                 <ul class="list-unstyled">
                     <li>
@@ -806,7 +443,7 @@
                                 <i class="fa fa-map-marker"></i>
                             </span>
                             <span>
-                                Cocody Riviera 5 Akouedo Palmeraie Rue Lot 57, Abidjan, Côte d'Ivoire
+                                {{ __('contact.adr') }}
                             </span>
                         </span>
                     </li>
@@ -816,7 +453,7 @@
                                 <i class="fa fa-phone"></i>
                             </span>
                             <span>
-                                <a href="tel:+225 79 05 62 03">+225 79 05 62 03</a>
+                                <a href="tel:{{ __('contact.tel1') }}">{{ __('contact.tel1') }}</a>
                             </span>
                         </span>
                     </li>
@@ -826,7 +463,7 @@
                                 <i class="fa fa-envelope"></i>
                             </span>
                             <span>
-                                <a href="mailto:info@anzvergure.com">info@anzvergure.com</a>
+                                <a href="mailto:{{ __('contact.email') }}">{{ __('contact.email') }}</a>
                             </span>
                         </span>
                     </li>

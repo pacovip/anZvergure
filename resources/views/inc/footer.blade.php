@@ -4,25 +4,25 @@
             <div class="row">
                 <div class="footer col-md-5 text-center animate" data-animation="fadeInUp">
                     <div class="footer widget text-center">
-                        <h3 class="widget-title title-menu">Explorez</h3>
+                        <h3 class="widget-title title-menu">{{ __('footer.explorez') }}</h3>
                         <ul class="footer-menu">
                             <li>
-                                <a href="{{url('about-us')}}">Présenation</a>
+                                <a href="{{route('about-us', app()->getLocale() )}}">{{ __('menu.presenation') }}</a>
                             </li>
                             <li class="menu1">
-                                <a href="{{url('consultant')}}">Consultants</a>
+                                <a href="{{route('consultant', app()->getLocale() )}}">{{ __('menu.consultants') }}</a>
                             </li>
                             <li>
-                                <a href="{{url('staff')}}">Equipes</a>
+                                <a href="{{route('policy', app()->getLocale() )}}">{{ __('menu.politiquequalite') }}</a>
                             </li>
                             <li class="menu1">
-                                <a href="{{url('policy')}}">Politique qualité</a>
+                                <a href="{{route('private-sector', app()->getLocale() )}}">{{ __('menu.secteurprive') }}</a>
                             </li>
                             <li>
-                                <a href="#">Secteurs Couverts</a>
+                                <a href="{{route('public-sector', app()->getLocale() )}}">{{ __('menu.secteurpublic') }}</a>
                             </li>
                             <li class="menu1">
-                                <a href="#">Nos Offres</a>
+                                <a href="{{route('contact', app()->getLocale() )}}">{{ __('menu.contacts') }}</a>
                             </li>
                         </ul>
                     </div>
@@ -39,17 +39,17 @@
                     <div class="widget">
                         <div class="media">
                             <i class="mx-10 color-main fa fa-map-marker"></i>
-                            Cocody Riviera 5 Akouedo Palmeraie Rue Lot 57, Abidjan, Côte d'Ivoire
+                            {{ __('contact.adr') }}
                         </div>
 
                         <div class="media">
                             <i class="mx-10 color-main fa fa-phone"></i>
-                            <a href="tel:+225 79 05 62 03">+225 79 05 62 03</a>
+                            <a href="tel:{{ __('contact.tel1') }}">{{ __('contact.tel1') }}</a>
                         </div>
 
                         <div class="media text-center link">
                             <i class="mx-10 text-center color-main fa fa-envelope"></i>
-                            <a href="mailto:info@anzvergure.com">info@anzvergure.com</a>
+                            <a href="mailto:{{ __('contact.email') }}">{{ __('contact.email') }}</a>
                         </div>
                     </div>
 
@@ -62,20 +62,20 @@
                 <div class="footer col-md-3 text-center animate" data-animation="fadeInUp">
                     <div class="widget widget_mailchimp">
 
-                        <h3 class="widget-title">Newsletter</h3>
+                        <h3 class="widget-title">{{ __('footer.newsletter_titre') }}</h3>
 
                         <p>
-                            Inscrivez-vous à la newsletter et soyez les 1<sup>er</sup> à être informé !
+                            {!! __('footer.newsletter_texte') !!}
                         </p>
 
                         <form class="signup-xx">
                             <label for="mailchimp_email">
-                                <span class="screen-reader-text">Inscrivez-vous:</span>
+                                <span class="screen-reader-text">{{ __('footer.inscrivezvous') }}:</span>
                             </label>
 
-                            <input required id="mailchimp_email" name="email" type="email" class="form-control mailchimp_email" placeholder="Adresse Email">
+                            <input required id="mailchimp_email" name="email" type="email" class="form-control mailchimp_email" placeholder="{{ __('footer.adresseemail') }}">
 
-                            <button type="submit" class="search-submit">Inscription</button>
+                            <button type="submit" class="search-submit">{{ __('footer.inscription') }}</button>
 
                         </form>
 
@@ -90,8 +90,8 @@
             <div class="row align-items-center">
                 <div class="divider-20 d-none d-lg-block"></div>
                 <div class="col-md-12 text-center">
-                    <p>ANzVERGURE &copy; Copyright
-                        <span class="copyright_year">2020</span> Tous droits réservés</p>
+                    <p>{!! __('footer.copyright') !!}
+                        <span class="copyright_year">2020 @if(date('Y') > 2020) - {{date('Y')}} @endif </span> {{ __('footer.droitreserves') }}</p>
                 </div>
                 <div class="divider-20 d-none d-lg-block"></div>
             </div>

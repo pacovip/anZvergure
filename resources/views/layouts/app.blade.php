@@ -54,9 +54,9 @@
         <div class="widget widget_search">
             <form method="get" class="searchform search-form" action="/">
                 <div class="form-group">
-                    <input type="text" value="" name="search" class="form-control" placeholder="Entrez votre recherche" id="modal-search-input">
+                    <input type="text" value="" name="search" class="form-control" placeholder="{{ __('menu.entrerrecherche') }}" id="modal-search-input">
                 </div>
-                <button type="submit" class="btn">Recherche</button>
+            <button type="submit" class="btn">{{ __('menu.recherche') }}</button>
             </form>
         </div>
     </div>
@@ -126,8 +126,10 @@
     <script src="{{ asset('js/main.js') }}"></script>
 
 
-    <!-- Google Map Script -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?"></script>
+    <!-- Google Map Script-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBC4rFZFnSNd1z3ET6W3qCT8PLH6zq-HVM"></script>
+    <!--<script type="text/javascript" async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBC4rFZFnSNd1z3ET6W3qCT8PLH6zq-HVM&callback=initMap"
+  ></script>-->
 
 </body>
 

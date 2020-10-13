@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('page_title')
-    Présentation | www.anzvergure.com
+{{ __('menu.presentation')}} | www.anzvergure.com
 @stop
 
 @section('page_slider')
@@ -15,20 +15,22 @@
                 <div class="col-md-12 text-center">
 
                     <h1 class="">
-                        Présentation
+                        {{ __('menu.presentation')}}
                     </h1>
 
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
-                            <a href="{{url('/')}}">Accueil</a>
+                            <a href="{{url('/')}}">
+                                {{ __('menu.accueil')}}
+                            </a>
                         </li>
 
                         <li class="breadcrumb-item">
-                            A-Propos
+                            {{ __('menu.apropos')}}
                         </li>
 
                         <li class="breadcrumb-item active">
-                            Présentation
+                            {{ __('menu.presentation')}}
                         </li>
 
                     </ol>
@@ -54,26 +56,21 @@
             <div class="col-md-12 col-lg-6 animate" data-animation="slideInLeft">
                 <div class="heading-about">
                     <h3>
-                        ANzVERGURE
+                        {{ __('home.anzvergure')}}
                     </h3>
-                    <p>
-                        est d'une entreprise spécialisée en Gestion Externalisée des Ressources Humaines créé en 2020 par des acteurs très expérimentés de la Gestion des Ressources Humaines en Afrique.
-                        <br>
-                        Après plus 22 années passés à sillonner toute l’Afrique et une partie du Monde, en travaillant pour diverses multinationales opérant aussi bien dans le GSM, les Télécommunications, la sécurité, les ventes d’engins de BTP qu’en cabinet d’Avocat et dans les Organisations internationales.
-
+                    <p class="text-justify">
+                        {{ __('home.anzvergure_description_2')}}
                     </p>
                     <h4 style="padding: 0px; margin:0px;">
-                        Notre mission
+                        {{ __('aboutus.notremission')}}
                     </h4>
-                    <p style="padding: 0px; margin-top:0px;">
-                        Les promoteurs d’ANzVERGURE ont décidé de mutualiser leurs expériences pour aider à solutionner les différentes problématiques qui se posent aux dirigeants d’entreprises que très souvent leurs propres DRH et / ou Avocat n’arrivent pas à résoudre de manière efficiente et durable.
-                        <br>
-                        Ayant géré les Ressources Humaines de ces différentes entreprises au niveau stratégique et très souvent de manière externalisée au regard des filiales des Groupes qui étaient gérées depuis le holding, ils ont pris conscience d’un tel besoin et de la nécessité de soutenir les organisations à partir de ce « business model » et de ce mode de fonctionnement qu’ils maitrisent parfaitement.
+                    <p class="text-justify" style="padding: 0px; margin-top:0px;">
+                        {!! __('aboutus.mission_texte') !!}
                     </p>
                 </div>
             </div>
             <div class="col-md-12 col-lg-6 animate" data-animation="slideInRight">
-                <img src="../images/person01.jpg" alt="person01.jpg">
+                <img src="{{asset('images/person01.jpg')}}" alt="person01.jpg">
             </div>
         </div>
     </div>
@@ -85,7 +82,7 @@
             <div class="d-none d-lg-block divider-80"></div>
 
             <div class="col-md-12 col-sm-12 text-center">
-                <h3 class="text-head">ANzVERGURE en chiffres</h3>
+                <h3 class="text-head">{{ __('home.anzvergure')}} {{ __('aboutus.enchiffres')}}</h3>
             </div>
             <div class="col-md-4 col-sm-6">
 
@@ -96,11 +93,11 @@
 
                     <h4>
                         <a>17
-                            <br> Consultants</a>
+                            <br> {{ __('aboutus.consultant')}}s</a>
                     </h4>
 
                     <p>
-                        ANzVERGURE travail avec des Consultants nationaux et internationaux.
+                        {{ __('aboutus.consultant_texte')}}
                     </p>
 
 
@@ -117,11 +114,11 @@
 
                     <h4>
                         <a>09
-                            <br>Partenaires</a>
+                            <br>{{ __('aboutus.partenaire')}}s</a>
                     </h4>
 
                     <p>
-                        ANzVERGURE collabore avec des partenaires stratégiques.
+                        {{ __('aboutus.partenaire_texte')}}
                     </p>
 
 
@@ -137,11 +134,11 @@
 
                     <h4>
                         <a>03
-                            <br>Coopérations</a>
+                            <br>{{ __('aboutus.cooperation')}}s</a>
                     </h4>
 
                     <p>
-                        ANzVERGURE est ouverte à des Coopérations B2B.
+                        {{ __('aboutus.cooperation_texte')}}
                     </p>
 
 
@@ -157,11 +154,11 @@
 
                     <h4>
                         <a>369
-                            <br>Employés gérés</a>
+                            <br>{{ __('aboutus.employesgeres')}}</a>
                     </h4>
 
                     <p>
-                        Nous recueillons le retour sur satisfactions des employés de nos clients.
+                        {{ __('aboutus.employesgeres_texte')}}
                     </p>
 
 
@@ -177,11 +174,11 @@
 
                     <h4>
                         <a>12
-                            <br>Entreprises Clientes</a>
+                            <br>{{ __('home.entreprisescli')}}</a>
                     </h4>
 
                     <p>
-                        Nos offres et notre politique qualité satisfons aux besoins et aux exigences de nos clients.
+                        {{ __('aboutus.entreprisescli_texte')}}
                     </p>
 
 
@@ -197,11 +194,11 @@
 
                     <h4>
                         <a>60
-                            <br>CV en moyenne/j</a>
+                            <br>{{ __('aboutus.cvenmoyenne')}}</a>
                     </h4>
 
                     <p>
-                        De nombre postulants attendent de débuter une carrière.
+                        {{ __('aboutus.cvenmoyenne_texte')}}
                     </p>
 
 

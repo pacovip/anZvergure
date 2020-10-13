@@ -84,7 +84,7 @@
                                 <a href="#">{{ __('menu.apropos') }}</a>
                                 <ul>
                                     <li class="{{ Request::url() == url(app()->getLocale().'/about-us') ? 'active' : '' }} ">
-                                        <a href="{{route('about-us', app()->getLocale() )}}">{{ __('menu.presenation') }}</a>
+                                        <a href="{{route('about-us', app()->getLocale() )}}">{{ __('menu.presentation') }}</a>
                                     </li>
                                     <li class="{{ Request::url() == url(app()->getLocale().'/consultant') ? 'active' : '' }} ">
                                         <a href="{{route('consultant', app()->getLocale() )}}">{{ __('menu.consultants') }}</a>
@@ -96,102 +96,44 @@
                             </li>
                             <!-- eof Présentation -->
                             <!-- Services -->
-                            <li>
-                                <a href="#">{{ __('menu.secteurcouvert') }}</a>
+                            <li class="{{ Request::url() == url(app()->getLocale().'/private-sector') ? 'active' : '' }} {{ Request::url() == url(app()->getLocale().'/public-sector') ? 'active' : '' }}">
+                                <a href="#">{{ __('menu.notrecible') }}</a>
                                 <ul>
-                                    <li>
-                                        <a href="">PME</a>
+                                    <li class="{{ Request::url() == url(app()->getLocale().'/private-sector') ? 'active' : '' }}">
+                                        <a href="{{route('private-sector', app()->getLocale() )}}">{{ __('menu.secteurprive') }}</a>
                                     </li>
-                                    <li>
-                                        <a href="">TPME</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Entreprises Unipersonnelles</a>
-                                    </li>
-                                    <li>
-                                        <a href="">Cabinets</a>
-                                    </li>
-                                    <li>
-                                        <a href="">ONG</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Organismes</a>
+                                    <li class="{{ Request::url() == url(app()->getLocale().'/public-sector') ? 'active' : '' }}">
+                                        <a href="{{route('public-sector', app()->getLocale() )}}">{{ __('menu.secteurpublic') }}</a>
                                     </li>
                                 </ul>
                             </li>
 
                             <!-- offres -->
-                            <li>
+                            <li class="
+                            {{ Request::url() == url(app()->getLocale().'/offer-administrative') ? 'active' : '' }}
+                            {{ Request::url() == url(app()->getLocale().'/offer-management') ? 'active' : '' }}
+                            {{ Request::url() == url(app()->getLocale().'/offer-project') ? 'active' : '' }}
+                            {{ Request::url() == url(app()->getLocale().'/offer-hr') ? 'active' : '' }}
+                            {{ Request::url() == url(app()->getLocale().'/offer-payroll') ? 'active' : '' }}
+                            ">
                                 <a href="#">{{ __('menu.nosoffres') }}</a>
-                                <div class="mega-menu">
-                                    <ul class="mega-menu-row">
-                                        <li class="mega-menu-col">
-                                            <a href="#">Solutions RH</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="#">RH Externalisée</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Screening & Vetting</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Recrutement</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Conseil & Assistance RH</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Fiches de poste</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="mega-menu-col">
-                                            <a href="#">Gestion administrative</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="#">Conseils</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Plan de restructuration</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Rédaction documentaire</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Gestion Administrative</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Gestions de contrats</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Représentation</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="mega-menu-col">
-                                            <a href="#">Gestion de Paie</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="#">Gestion externe de la paie </a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Grilles salariales </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="mega-menu-col">
-                                            <a href="#">Formations</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="#">Plan de formation</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Conseils & Assistances</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <ul>
+                                    <li class="{{ Request::url() == url(app()->getLocale().'/offer-administrative') ? 'active' : '' }}">
+                                        <a href="{{route('offer-administrative', app()->getLocale() )}}">{{ __('menu.suiviadm') }}</a>
+                                    </li>
+                                    <li class="{{ Request::url() == url(app()->getLocale().'/offer-management') ? 'active' : '' }}">
+                                        <a href="{{route('offer-management', app()->getLocale() )}}">{{ __('menu.suivimanag') }}</a>
+                                    </li>
+                                    <li class="{{ Request::url() == url(app()->getLocale().'/offer-project') ? 'active' : '' }}">
+                                        <a href="{{route('offer-project', app()->getLocale() )}}">{{ __('menu.suiviproj') }}</a>
+                                    </li>
+                                    <li class="{{ Request::url() == url(app()->getLocale().'/offer-hr') ? 'active' : '' }}">
+                                        <a href="{{route('offer-hr', app()->getLocale() )}}">{{ __('menu.suividevrh') }}</a>
+                                    </li>
+                                    <li class="{{ Request::url() == url(app()->getLocale().'/offer-payroll') ? 'active' : '' }}">
+                                        <a href="{{route('offer-payroll', app()->getLocale() )}}">{{ __('menu.suivipaie') }}</a>
+                                    </li>
+                                </ul>
                             </li>
 
                             <!-- contacts -->

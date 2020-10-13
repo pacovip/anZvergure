@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('page_title')
-{{ __('menu.politiquequalite')}} | www.anzvergure.com
+    {{ __('menu.secteurpublic')}} | www.anzvergure.com
 @stop
 
 @section('page_slider')
@@ -15,7 +15,7 @@
                 <div class="col-md-12 text-center">
 
                     <h1 class="">
-                        {{ __('menu.politiquequalite')}}
+                        {{ __('menu.secteurpublic')}}
                     </h1>
 
                     <ol class="breadcrumb">
@@ -26,11 +26,11 @@
                         </li>
 
                         <li class="breadcrumb-item">
-                            {{ __('menu.apropos')}}
+                            {{ __('menu.notrecible')}}
                         </li>
 
                         <li class="breadcrumb-item active">
-                            {{ __('menu.politiquequalite')}}
+                            {{ __('menu.secteurpublic')}}
                         </li>
 
                     </ol>
@@ -64,57 +64,42 @@
                     <!-- .post-thumbnail -->
                     <div class="item-media post-thumbnail">
                         <div class="embed-responsive- embed-responsive-3by2-">
-                            <img src="{{asset('images/policy.jpg')}}" alt="Consultants">
+                            <img src="{{asset('images/publicsector.jpg')}}" alt="Consultants">
                         </div>
                     </div>
 
                     <div class="item-content">
-                        <div class="entry-content">
+                        <div class="entry-content text-justify">
                             <p>
-                                {{ __('policy.texte') }}
+                                {{ __('publicsector.texte') }}
                             </p>
 
                             <ul class="list1">
-                                <li>
+                                <li class="pb-3">
                                     <i class="color-main fa fa-check"></i>
-                                    {{ __('policy.li_1') }}
+                                    {{ __('publicsector.li_1') }}
                                 </li>
-                                <li>
+                                <li class="pb-3">
                                     <i class="color-main fa fa-check"></i>
-                                    {{ __('policy.li_2') }}
+                                    {{ __('publicsector.li_2') }}
                                 </li>
-                                <li>
+                                <li class="pb-3">
                                     <i class="color-main fa fa-check"></i>
-                                    {{ __('policy.li_3') }}
+                                    {{ __('publicsector.li_3') }}
                                 </li>
-                                <li>
+                                <li class="pb-3">
                                     <i class="color-main fa fa-check"></i>
-                                    {{ __('policy.li_4') }}
+                                    {{ __('publicsector.li_4') }}
                                 </li>
-                                <li>
+                                <li class="pb-3">
                                     <i class="color-main fa fa-check"></i>
-                                    {{ __('policy.li_5') }}
+                                    {{ __('publicsector.li_5') }}
                                 </li>
-                                <li>
+                                <li class="pb-3">
                                     <i class="color-main fa fa-check"></i>
-                                    {{ __('policy.li_6') }}
+                                    {{ __('publicsector.li_6') }}
                                 </li>
-                                <li>
-                                    <i class="color-main fa fa-check"></i>
-                                    {{ __('policy.li_7') }}
-                                </li>
-                                <li>
-                                    <i class="color-main fa fa-check"></i>
-                                    {{ __('policy.li_8') }}
-                                </li>
-                                <li>
-                                    <i class="color-main fa fa-check"></i>
-                                    {{ __('policy.li_9') }}
-                                </li>
-                                <li>
-                                    <i class="color-main fa fa-check"></i>
-                                    {{ __('policy.li_10') }}
-                                </li>
+
                             </ul>
 
                         </div>
