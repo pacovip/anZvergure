@@ -64,7 +64,7 @@
                     <!-- .post-thumbnail -->
                     <div class="item-media post-thumbnail">
                         <div class="embed-responsive- embed-responsive-3by2-">
-                            <img src="{{asset('images/privatesector.jpg')}}" alt="Consultants">
+                            <img src="{{asset('images/offerproject.jpg')}}" alt="{{ __('menu.suiviproj') }}" title="{{ __('menu.suiviproj') }}">
                         </div>
                     </div>
 

@@ -84,7 +84,7 @@
             <div class="col-md-12 col-sm-12 text-center">
                 <h3 class="text-head">{{ __('home.anzvergure')}} {{ __('aboutus.enchiffres')}}</h3>
             </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-3 col-sm-6">
 
                 <div class="icon-box text-center">
                     <div class="icon-styled fs-56">
@@ -92,7 +92,7 @@
                     </div>
 
                     <h4>
-                        <a>17
+                        <a>04
                             <br> {{ __('aboutus.consultant')}}s</a>
                     </h4>
 
@@ -105,15 +105,15 @@
             </div>
             <!-- .col-* -->
 
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-3 col-sm-6">
 
                 <div class="icon-box text-center">
                     <div class="icon-styled fs-56">
-                        <i class="color-main2 fa fa-building-o"></i>
+                        <i class="color-main2 fa fa-briefcase"></i>
                     </div>
 
                     <h4>
-                        <a>09
+                        <a>02
                             <br>{{ __('aboutus.partenaire')}}s</a>
                     </h4>
 
@@ -125,47 +125,8 @@
                 </div>
             </div>
             <!-- .col-* -->
-            <div class="col-md-4 col-sm-6">
 
-                <div class="icon-box text-center">
-                    <div class="icon-styled fs-56">
-                        <i class="color-main2 fa fa-briefcase"></i>
-                    </div>
-
-                    <h4>
-                        <a>03
-                            <br>{{ __('aboutus.cooperation')}}s</a>
-                    </h4>
-
-                    <p>
-                        {{ __('aboutus.cooperation_texte')}}
-                    </p>
-
-
-                </div>
-            </div>
-            <!-- .col-* -->
-            <div class="col-md-4 col-sm-6">
-
-                <div class="icon-box text-center">
-                    <div class="icon-styled fs-56">
-                        <i class="color-main2 fa fa-money"></i>
-                    </div>
-
-                    <h4>
-                        <a>369
-                            <br>{{ __('aboutus.employesgeres')}}</a>
-                    </h4>
-
-                    <p>
-                        {{ __('aboutus.employesgeres_texte')}}
-                    </p>
-
-
-                </div>
-            </div>
-            <!-- .col-* -->
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-3 col-sm-6">
 
                 <div class="icon-box text-center">
                     <div class="icon-styled fs-56">
@@ -173,7 +134,7 @@
                     </div>
 
                     <h4>
-                        <a>12
+                        <a>05
                             <br>{{ __('home.entreprisescli')}}</a>
                     </h4>
 
@@ -185,15 +146,15 @@
                 </div>
             </div>
             <!-- .col-* -->
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-3 col-sm-6">
 
                 <div class="icon-box text-center">
                     <div class="icon-styled fs-56">
-                        <i class="color-main2 fa fa-file-text-o"></i>
+                        <i class="color-main2 fa fa-file-text"></i>
                     </div>
 
                     <h4>
-                        <a>60
+                        <a>15
                             <br>{{ __('aboutus.cvenmoyenne')}}</a>
                     </h4>
 

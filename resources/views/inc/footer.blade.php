@@ -7,7 +7,7 @@
                         <h3 class="widget-title title-menu">{{ __('footer.explorez') }}</h3>
                         <ul class="footer-menu">
                             <li>
-                                <a href="{{route('about-us', app()->getLocale() )}}">{{ __('menu.presenation') }}</a>
+                                <a href="{{route('about-us', app()->getLocale() )}}">{{ __('menu.presentation') }}</a>
                             </li>
                             <li class="menu1">
                                 <a href="{{route('consultant', app()->getLocale() )}}">{{ __('menu.consultants') }}</a>

@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'texte' => "ANzVERGURE travail avec les entreprises du secteur privé.",
+    'texte' => "Conscient du besoin d'accompagnement des PME et de certaines grandes entreprises à travers des conseils avisés à l'endroit du Management, notre expérience et notre expertise fait la différence.",
     'li_1' => "Dans les PME, les pratiques de gestion des Ressources Humaines sont peu ou pas développées et toujours attribués à un comptable ou un responsable Admin & Fin ;",
     'li_2' => "La GRH apparaît au mieux comme un luxe, au pire comme une perte de temps inutile. Ce qui n’est pas vrai ;",
     'li_3' => "Dans les PME les relations sociales sont les plus intenses et les plus riches.  Donc nécessitent plus d’attention pour réduire les conflits et les anticiper ;",

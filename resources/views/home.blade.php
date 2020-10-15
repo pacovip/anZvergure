@@ -185,27 +185,21 @@
                     <div class="icons-list">
                         <ul class="list-bordered">
                             <li class=" media media-body">
-                                <i class="teaser-icon fa fa-rocket"></i>
+                                <i class="teaser-icon fa fa-group"></i>
                                 <h4 class="title">
-                                    <span>238</span> {{ __('home.entreprisescli') }}
+                                    <span>04</span> {{ __('aboutus.consultant') }}s
                                 </h4>
                             </li>
                             <li class="media media-body">
                                 <i class="teaser-icon fa fa-briefcase"></i>
                                 <h4 class="title">
-                                    <span>12</span> {{ __('home.programmescoop') }}
+                                    <span>02</span> {{ __('aboutus.partenaire') }}s
                                 </h4>
                             </li>
                             <li class="media media-body">
                                 <i class="teaser-icon fa fa-graduation-cap"></i>
                                 <h4 class="title">
-                                    <span>64</span> {{ __('home.coursformations') }}
-                                </h4>
-                            </li>
-                            <li class="border-bottom-0 media media-body">
-                                <i class="teaser-icon fa fa-group"></i>
-                                <h4 class="title">
-                                    <span>12</span> {{ __('home.partenairesstrat') }}
+                                    <span>05</span> {{ __('home.entreprisescli') }}
                                 </h4>
                             </li>
                         </ul>
@@ -232,7 +226,7 @@
                             </a>
                         </h3>
                         <p>
-                            {!! __('home.suiviadm_subtexte') !!} ...
+                            {!! __('home.suiviadm_subtexte') !!}
                         </p>
                     </div>
                 </div>
@@ -247,7 +241,7 @@
                             </a>
                         </h3>
                         <p>
-                            {!! __('home.suivimanag_subtexte') !!} ...
+                            {!! __('home.suivimanag_subtexte') !!}
                         </p>
                     </div>
                 </div>
@@ -262,7 +256,7 @@
                             </a>
                         </h3>
                         <p>
-                            {!! __('home.suiviproj_subtexte') !!} ...
+                            {!! __('home.suiviproj_subtexte') !!}
                         </p>
                     </div>
                 </div>
@@ -279,7 +273,7 @@
                             </a>
                         </h3>
                         <p>
-                            {!! __('home.suividevrh_subtexte') !!} ...
+                            {!! __('home.suividevrh_subtexte') !!}
                         </p>
                     </div>
                 </div>
@@ -294,7 +288,7 @@
                             </a>
                         </h3>
                         <p>
-                            {!! __('home.suivipaie_subtexte') !!} ...
+                            {!! __('home.suivipaie_subtexte') !!}
                         </p>
                     </div>
                 </div>

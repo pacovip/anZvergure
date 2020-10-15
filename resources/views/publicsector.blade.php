@@ -64,7 +64,7 @@
                     <!-- .post-thumbnail -->
                     <div class="item-media post-thumbnail">
                         <div class="embed-responsive- embed-responsive-3by2-">
-                            <img src="{{asset('images/publicsector.jpg')}}" alt="Consultants">
+                            <img src="{{asset('images/publicsector.jpg')}}" alt="{{ __('menu.secteurpublic') }}">
                         </div>
                     </div>
 
@@ -98,6 +98,10 @@
                                 <li class="pb-3">
                                     <i class="color-main fa fa-check"></i>
                                     {{ __('publicsector.li_6') }}
+                                </li>
+                                <li class="pb-3">
+                                    <i class="color-main fa fa-check"></i>
+                                    {{ __('publicsector.li_7') }}
                                 </li>
 
                             </ul>

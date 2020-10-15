@@ -127,9 +127,8 @@
 
 
     <!-- Google Map Script-->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBC4rFZFnSNd1z3ET6W3qCT8PLH6zq-HVM"></script>
-    <!--<script type="text/javascript" async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBC4rFZFnSNd1z3ET6W3qCT8PLH6zq-HVM&callback=initMap"
-  ></script>-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?"></script>
+
 
 </body>
 
