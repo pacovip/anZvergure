@@ -1,20 +1,25 @@
 <?php
 
 return [
-    'notremission' => "Notre mission",
-    'mission_texte' => "Les promoteurs d’ANzVERGURE ont décidé de mutualiser leurs expériences pour aider à solutionner les différentes problématiques qui se posent aux dirigeants d’entreprises que très souvent leurs propres DRH et / ou Avocat n’arrivent pas à résoudre de manière efficiente et durable. <br> Ayant géré les Ressources Humaines de ces différentes entreprises au niveau stratégique et très souvent de manière externalisée au regard des filiales des Groupes qui étaient gérées depuis le holding, ils ont pris conscience d’un tel besoin et de la nécessité de soutenir les organisations à partir de ce « business model » et de ce mode de fonctionnement qu’ils maitrisent parfaitement.",
-    'enchiffres' => "en chiffres",
+    'notremission' => "Our mission",
+    'mission_texte' => "ANzVERGURE’s owners have decided to put together their experience to help solving various issues faced by company managers that their own HR managers and/or lawyers often cannot solve efficiently and sustainably. <br> Having managed the Human Resources of these different companies at a strategic level and very often in an outsourced way with regard to the subsidiaries of the Groups which were managed from the headquarters, ANzVERGURE’s owners are aware of such a need and of the necessity to support the organisations based on this ''business model'' and this operating way of management which they know perfectly.",
+    'enchiffres' => "resume",
     'consultant' => "Consultant",
-    'consultant_texte' => "ANzVERGURE travail avec des Consultants nationaux et internationaux.",
-    'partenaire' => "Partenaire",
-    'partenaire_texte' => "ANzVERGURE collabore avec des partenaires stratégiques.",
-    'cooperation' => "Coopération",
-    'cooperation_texte' => "ANzVERGURE est ouverte à des Coopérations B2B.",
-    'employesgeres' => "Employés gérés",
-    'employesgeres_texte' => "Nous recueillons le retour sur satisfactions des employés de nos clients.",
-    'entreprisescli_texte' => "Nos offres et notre politique qualité satisfont aux besoins et aux exigences de nos clients.",
-    'cvenmoyenne' => "CV en moyenne/j",
-    'cvenmoyenne_texte' => "De nombre postulants attendent de débuter une carrière.",
+    'consultant_texte' => "",
+    'partenaire' => "Partner",
+    'partenaire_texte' => "",
+    'cooperation' => "Cooperation",
+    'cooperation_texte' => "",
+    'employesgeres' => "",
+    'employesgeres_texte' => "",
+    'entreprisescli_texte' => "",
+    'cvenmoyenne' => "CV per day",
+    'cvenmoyenne_texte' => "",
+    'nosvaleurs' => "Our values",
+    'valeurs_texte_li_1' => "Integrity ;",
+    'valeurs_texte_li_2' => "Respect for the client and deadlines ;",
+    'valeurs_texte_li_3' => "A job well done with professionalism ;",
+    'valeurs_texte_li_4' => "Commitment to Corporate Social Responsibility.",
 
 
 ];

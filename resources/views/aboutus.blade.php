@@ -56,7 +56,7 @@
             <div class="col-md-12 col-lg-6 animate" data-animation="slideInLeft">
                 <div class="heading-about">
                     <h3>
-                        {{ __('home.anzvergure')}}
+                        {!! __('home.anzvergure')!!}
                     </h3>
                     <p class="text-justify">
                         {{ __('home.anzvergure_description_2')}}
@@ -64,9 +64,31 @@
                     <h4 style="padding: 0px; margin:0px;">
                         {{ __('aboutus.notremission')}}
                     </h4>
-                    <p class="text-justify" style="padding: 0px; margin-top:0px;">
+                    <p class="text-justify" style="padding:0px; margin:0px;">
                         {!! __('aboutus.mission_texte') !!}
                     </p>
+                    <h4 style="padding: 0px; margin:0px;">
+                        {{ __('aboutus.nosvaleurs')}}
+                    </h4>
+                    <ul class="list1">
+                        <li class="pb-3">
+                            <i class="color-main fa fa-check"></i>
+                            {{ __('aboutus.valeurs_texte_li_1') }}
+                        </li>
+                        <li class="pb-3">
+                            <i class="color-main fa fa-check"></i>
+                            {{ __('aboutus.valeurs_texte_li_2') }}
+                        </li>
+                        <li class="pb-3">
+                            <i class="color-main fa fa-check"></i>
+                            {{ __('aboutus.valeurs_texte_li_3') }}
+                        </li>
+                        <li class="pb-3">
+                            <i class="color-main fa fa-check"></i>
+                            {{ __('aboutus.valeurs_texte_li_4') }}
+                        </li>
+
+                    </ul>
                 </div>
             </div>
             <div class="col-md-12 col-lg-6 animate" data-animation="slideInRight">
@@ -82,7 +104,7 @@
             <div class="d-none d-lg-block divider-80"></div>
 
             <div class="col-md-12 col-sm-12 text-center">
-                <h3 class="text-head">{{ __('home.anzvergure')}} {{ __('aboutus.enchiffres')}}</h3>
+                <h3 class="text-head">{!! __('home.anzvergure')!!} {{ __('aboutus.enchiffres')}}</h3>
             </div>
             <div class="col-md-3 col-sm-6">
 
@@ -97,7 +119,7 @@
                     </h4>
 
                     <p>
-                        {{ __('aboutus.consultant_texte')}}
+                        {!! __('aboutus.consultant_texte')!!}
                     </p>
 
 
@@ -118,7 +140,7 @@
                     </h4>
 
                     <p>
-                        {{ __('aboutus.partenaire_texte')}}
+                        {!! __('aboutus.partenaire_texte') !!}
                     </p>
 
 
@@ -139,7 +161,7 @@
                     </h4>
 
                     <p>
-                        {{ __('aboutus.entreprisescli_texte')}}
+                        {!! __('aboutus.entreprisescli_texte')!!}
                     </p>
 
 
@@ -159,7 +181,7 @@
                     </h4>
 
                     <p>
-                        {{ __('aboutus.cvenmoyenne_texte')}}
+                        {!! __('aboutus.cvenmoyenne_texte') !!}
                     </p>
 
 

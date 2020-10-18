@@ -77,6 +77,10 @@
                             <ul class="list1">
                                 <li>
                                     <i class="color-main fa fa-check"></i>
+                                    {{ __('policy.li_0') }}
+                                </li>
+                                <li>
+                                    <i class="color-main fa fa-check"></i>
                                     {{ __('policy.li_1') }}
                                 </li>
                                 <li>
@@ -110,10 +114,6 @@
                                 <li>
                                     <i class="color-main fa fa-check"></i>
                                     {{ __('policy.li_9') }}
-                                </li>
-                                <li>
-                                    <i class="color-main fa fa-check"></i>
-                                    {{ __('policy.li_10') }}
                                 </li>
                             </ul>
 

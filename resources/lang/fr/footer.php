@@ -8,7 +8,7 @@ return [
     'newsletter_reponse' => "Merci pour votre inscription, un email de vérification vous a été envoyé !",
     'inscrivezvous' => "Inscrivez-vous",
     'inscription' => "Inscription",
-    'copyright' => "ANzVERGURE &copy; Copyright",
+    'copyright' => "AN<span style='font-size:13px;'>z</span>VERGURE &copy; Copyright",
     'droitreserves' => "Tous droits réservés",
     'adresseemail' => "Adresse Email",
     'explorez' => "Explorez",

@@ -175,7 +175,7 @@
                 <div class="col-md-12 col-lg-6 animate" data-animation="slideInLeft">
                     <div class="heading-about">
                         <h2>
-                            {{__('home.anzvergure')}}
+                            {!!__('home.anzvergure')!!}
                         </h2>
                         <p class="text-justify">
                             {!! __('home.anzvergure_description') !!}

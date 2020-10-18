@@ -1,15 +1,15 @@
 <?php
 
 return [
-    'texte' => "Faire un speech ici.",
-    'li_1' => "Organisation Réunion CHSCT ;",
-    'li_2' => "Aide à l'acquisition de logiciel RH ;",
-    'li_3' => "Organiser la mise en place des élections des instances représentatives des salariés ;",
-    'li_4' => "Planifier les réunions avec les élus ;",
-    'li_5' => "Mise en place de plan de restructuration ;",
-    'li_6' => "Classification catégorielle ;",
-    'li_7' => "Négociation et Médiation ;",
-    'li_8' => "Pesée des postes ;",
-    'li_9' => "Grille des salaires.",
+    'texte' => "ANzVERGURE accompanies and helps companies in carrying out certain activities organized in phases or stages and forming the management unit allowing the achievement of a defined and precise objective requiring the implementation of human and material resources for its achievement; Working in this way, we help the realization of projects in short deadlines with a quality result.",
+    'li_1' => "Healf & safety meeting holding ;",
+    'li_2' => "Support on HR sofware acquisition ;",
+    'li_3' => "Organize the establishment of elections for employee representative bodies ;",
+    'li_4' => "Plan meetings with union ;",
+    'li_5' => "Implementation of restructuring plan ;",
+    'li_6' => "Grid Classification ;",
+    'li_7' => "Negotiation and Mediation ;",
+    'li_8' => "Weighing of posts ;",
+    'li_9' => "Salary Scale.",
 
 ];

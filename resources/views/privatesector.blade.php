@@ -99,6 +99,22 @@
                                     <i class="color-main fa fa-check"></i>
                                     {{ __('privatesector.li_6') }}
                                 </li>
+                                <li class="pb-3">
+                                    <i class="color-main fa fa-check"></i>
+                                    {{ __('privatesector.li_7') }}
+                                </li>
+                                <li class="pb-3">
+                                    <i class="color-main fa fa-check"></i>
+                                    {{ __('privatesector.li_8') }}
+                                </li>
+                                <li class="pb-3">
+                                    <i class="color-main fa fa-check"></i>
+                                    {{ __('privatesector.li_9') }}
+                                </li>
+                                <li class="pb-3">
+                                    <i class="color-main fa fa-check"></i>
+                                    {{ __('privatesector.li_10') }}
+                                </li>
 
                             </ul>
 

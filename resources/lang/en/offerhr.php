@@ -1,12 +1,12 @@
 <?php
 
 return [
-    'texte' => "Faire un speech ici.",
-    'li_1' => "Recrutement ;",
+    'texte' => "To help them optimize the organization of work and the management of occupational risks, ANzVERGURE supports companies in the implementation of their recruitment and / or training policy according to the strategic orientations of the structure and the targeted development objectives.",
+    'li_1' => "Recruitment ;",
     'li_2' => "Screening & Vetting ;",
-    'li_3' => "Rédaction de plan de formation ;",
-    'li_4' => "Rédaction de fiche de poste ;",
-    'li_5' => "Formation.",
+    'li_3' => "Training Plan redaction ;",
+    'li_4' => "Job description redaction ;",
+    'li_5' => "Training.",
 
 
 ];

@@ -5,7 +5,7 @@ return [
     'en' => 'Anglais',
     'accueil' => 'Home',
     'apropos' => 'About us',
-    'presentation' => 'Presenation',
+    'presentation' => 'Presentation',
     'consultant' => 'Consultant',
     'consultants' => 'Consultants',
     'politiquequalite' => 'Quality policy',

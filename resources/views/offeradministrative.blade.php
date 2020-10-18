@@ -158,13 +158,7 @@
                             <li class="media media-body" style="border: none;">
                                 <i class="teaser-icon fa fa-briefcase"></i>
                                 <h4 class="title">
-                                    <span>{{ __('offeradministrative.alademande') }} </span>
-                                </h4>
-                            </li>
-                            <li class="media media-body" style="border: none;">
-                                <i class="teaser-icon fa fa-briefcase"></i>
-                                <h4 class="title">
-                                    <span>{{ __('home.et') }} {{ __('offeradministrative.enconsultation') }} </span>
+                                    <span>{{ __('home.et') }} {{ __('offeradministrative.alademande') }} </span>
                                 </h4>
                             </li>
                         </ul>

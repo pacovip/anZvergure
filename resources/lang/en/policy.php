@@ -1,16 +1,15 @@
 <?php
 
 return [
-    'texte' => "Afin de satisfaire aux besoins et aux exigences de nos clients, nous travaillons sur base d'une politique qualité applicable à tous projets.",
-    'li_1' => "Notre capacité d’interagir sur tout le continent Africain avec une parfaite connaissance des différents codes du travail ;",
-    'li_2' => "Nos valeurs de respect du client et des délais, du travail bien fait avec professionnalisme et d’intégrité ;",
-    'li_3' => "Une prise en main effective ;",
-    'li_4' => "Une offre sur mesure répondant aux attentes des clients ;",
-    'li_5' => "Un accompagnement personnalisé ;",
-    'li_6' => "Un coaching des équipes en place;",
-    'li_7' => "Une mise en place d’outils effectifs de mangement des RH ;",
-    'li_8' => "Un accent mis sur le volet développement des RH, permettant d’anticiper sur le futur ;",
-    'li_9' => "Une prise en compte des aspects juridiques de l’organisation ;",
-    'li_10' => "Offre globale adaptée à chaque client.",
+    'texte' => "In order to meet the needs and requirements of our customers, we work on the basis of a quality policy applicable to all projects.",
+    'li_1' => "Our ability to interact across the African continent with a perfect knowledge of the different labor codes ;",
+    'li_2' => "Our values: Respect for customers and deadlines - A job well done with professionalism - Integrity - Commitment to Corporate Social Responsibility ;",
+    'li_3' => "A tailor-made offer that meets the expectations of the partners ;",
+    'li_4' => "Personalized support ;",
+    'li_5' => "Team coaching in place ;",
+    'li_6' => "The implementation of effective HR management tools ;",
+    'li_7' => "A focus on HR development, enabling anticipation of the future ;",
+    'li_8' => "Taking into account the legal aspects of the organization ;",
+    'li_9' => "A global offer adapted to each customer.",
 
 ];
