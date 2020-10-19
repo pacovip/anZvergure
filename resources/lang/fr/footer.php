@@ -12,6 +12,7 @@ return [
     'droitreserves' => "Tous droits réservés",
     'adresseemail' => "Adresse Email",
     'explorez' => "Explorez",
+    'nospartenaires' => "Nos partenaires",
 
 
 

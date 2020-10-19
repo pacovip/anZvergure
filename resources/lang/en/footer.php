@@ -12,6 +12,7 @@ return [
     'droitreserves' => "All rights reserved",
     'adresseemail' => "Email Addresse",
     'explorez' => "Explore",
+    'nospartenaires' => "Our partners",
 
 
 

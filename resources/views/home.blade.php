@@ -225,8 +225,10 @@
                                 {{ __('menu.suiviadm') }}
                             </a>
                         </h3>
-                        <p>
-                            {!! __('home.suiviadm_subtexte') !!}
+                        <p class="text-justify-">
+                            <a href="{{ route('offer-administrative', app()->getLocale() )}}">
+                                {!! __('home.suiviadm_subtexte') !!} ...
+                            </a>
                         </p>
                     </div>
                 </div>
@@ -240,8 +242,10 @@
                                 {{ __('menu.suivimanag') }}
                             </a>
                         </h3>
-                        <p>
-                            {!! __('home.suivimanag_subtexte') !!}
+                        <p class="text-justify-">
+                            <a href="{{ route('offer-management', app()->getLocale() )}}">
+                                {!! __('home.suivimanag_subtexte') !!} ...
+                            </a>
                         </p>
                     </div>
                 </div>
@@ -255,8 +259,10 @@
                                 {{ __('menu.suiviproj') }}
                             </a>
                         </h3>
-                        <p>
-                            {!! __('home.suiviproj_subtexte') !!}
+                        <p class="text-justify-">
+                            <a href="{{ route('offer-project', app()->getLocale() )}}">
+                                {!! __('home.suiviproj_subtexte') !!} ...
+                            </a>
                         </p>
                     </div>
                 </div>
@@ -272,8 +278,10 @@
                                 {{ __('menu.suividevrh') }}
                             </a>
                         </h3>
-                        <p>
-                            {!! __('home.suividevrh_subtexte') !!}
+                        <p class="text-justify-">
+                            <a href="{{ route('offer-hr', app()->getLocale() )}}">
+                                {!! __('home.suividevrh_subtexte') !!} ...
+                            </a>
                         </p>
                     </div>
                 </div>
@@ -287,8 +295,10 @@
                                 {{ __('menu.suivipaie') }} <br>&nbsp;
                             </a>
                         </h3>
-                        <p>
-                            {!! __('home.suivipaie_subtexte') !!}
+                        <p class="text-justify-">
+                            <a href="{{ route('offer-payroll', app()->getLocale() )}}">
+                                {!! __('home.suivipaie_subtexte') !!} ...
+                            </a>
                         </p>
                     </div>
                 </div>
@@ -297,6 +307,45 @@
     </section>
 
 
+    <!--topline section-->
+    <section class="page_topline ls ms c-my-10 s-py-5">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-xl-2 col-lg-3 text-center text-lg-left">
+                    &nbsp;
+                </div>
+
+                <div class="col-xl-8 col-lg-6">
+
+                    <div class="owl-carousel owl-topline-news-slider owl-news-slider-items" data-items="1" data-responsive-lg="1" data-responsive-md="1" data-responsive-sm="1" data-nav="true" data-nav-next="<span class='topline-news-nav-arrow next-arrow fa fa-chevron-right'>"
+                        data-nav-prev="<span class='topline-news-nav-arrow prev-arrow fa fa-chevron-left'>" data-draggable="false" data-loop="true" data-autoplay="true" data-synced-class=".owl-news-slider-dates">
+
+                        <!-- item 1 -->
+                        <div class="topline-news-item text-center" style="font-size: 20px;">
+                            <span class="links-darkgrey">
+                                &nbsp; {!! __('home.alerte_1') !!}
+                            </span>
+                        </div>
+                        <!-- eof item 1 -->
+                        <!-- item 2 -->
+                        <div class="topline-news-item text-center" style="font-size: 20px;">
+                            <span class="links-darkgrey">
+                                &nbsp; {!! __('home.alerte_1') !!}
+                            </span>
+                        </div>
+                        <!-- eof item 2 -->
+
+                    </div>
+
+                </div>
+
+                <div class="col-xl-2 col-lg-3 text-center text-lg-right">
+                    &nbsp;
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--eof topline-->
     <section class="pt-20 pb-10 s-py-lg-130 main_contact_form">
         <div class="container">
             <div class="row">
@@ -368,52 +417,38 @@
                 <div class="col-md-12">
 
                     <div class="testimonials-slider owl-carousel" data-autoplay="true" data-responsive-lg="1" data-responsive-md="1" data-responsive-sm="1" data-nav="false" data-dots="true">
+
+                        <!-- .testimonials 1 -->
                         <div class="quote-item">
                             <div class="quote-image">
-                                <img src="{{ asset('images/team/testimonials_01.jpg') }}" alt="">
+                                <img src="{{ asset('images/testimonials/charles.jpg') }}" alt="">
                             </div>
                             <p class="small-text color-darkgrey">
-                                Jessica J.
+                                Charles
                                 <br>
-                                <span>Aumiller</span>
+                                <span>IDIBOUO</span>
                             </p>
                             <p class="testimonials">
                                 <em class="big text-muted">
-                                    Working with HR Invenir has already allowed us to challenge some existing assumptions internally, right from the first data collection. The dashboards have been able to provide us with some validated external insight.
+                                    {!! __('home.testimonials_1') !!}
                                 </em>
                             </p>
-                        </div>
-                        <div class="quote-item">
+                        </div><div class="quote-item">
                             <div class="quote-image">
-                                <img src="{{ asset('images/team/testimonials_02.jpg') }}" alt="">
+                                <img src="{{ asset('images/testimonials/charles.jpg') }}" alt="">
                             </div>
                             <p class="small-text color-darkgrey">
-                                Michael J.
-                                <span>Carter</span>
+                                Charles
+                                <br>
+                                <span>IDIBOUO</span>
                             </p>
                             <p class="testimonials">
                                 <em class="big text-muted">
-                                    That is always so powerful in evaluating performance and setting future direction. The data collection itself was straightforward, and Nicky and Jeremy have been a pleasure to work with
+                                    {!! __('home.testimonials_1') !!}
                                 </em>
                             </p>
                         </div>
-
-
-                        <div class="quote-item">
-                            <div class="quote-image">
-                                <img src="{{ asset('images/team/testimonials_03.jpg') }}" alt="">
-                            </div>
-                            <p class="small-text color-darkgrey">
-                                Sammy
-                                <span>Winchell</span>
-                            </p>
-                            <p class="testimonials">
-                                <em class="big text-muted">
-                                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent.
-                                </em>
-                            </p>
-                        </div>
-
+                        <!-- eof.testimonials 1 -->
                     </div>
                     <!-- .testimonials-slider -->
 

@@ -18,11 +18,11 @@ return [
     'programmescoop' => "",
     'coursformations' => "Training",
     'partenairesstrat' => "Strategic partners",
-    'suiviadm_subtexte' => "",
-    'suivimanag_subtexte' => "",
-    'suiviproj_subtexte' => "",
-    'suividevrh_subtexte' => "",
-    'suivipaie_subtexte' => "",
+    'suiviadm_subtexte' => "We support companies in the daily management of their Human Resources in order to improve",
+    'suivimanag_subtexte' => "New challenges such as well-being at work and social responsibility require that innovative tools",
+    'suiviproj_subtexte' => "ANzVERGURE accompanies and helps companies in carrying out certain activities organized in phases or stages and forming",
+    'suividevrh_subtexte' => "o help them optimize the organization of work and the management of occupational risks",
+    'suivipaie_subtexte' => "In view of the constant modifications and evolutions of payroll management and processing rules",
     'envoyer' => "Send",
     'votrecv' => "Your CV",
     'votredomaine' => "Your job field",
@@ -31,6 +31,8 @@ return [
     'nomcomplet' => "Full Name",
     'et' => "and",
     'lienssociaux' => "Social Links",
+    'testimonials_1' => "Very professional support, relevant advice, personalized follow-up and appreciable responsiveness, all at carefully considered fees. <br> I took real pleasure from this collaboration. <br> I recommend ANzVERGURE ... ",
+    'alerte_1' => "Thank you to for sending us your CV !",
 
 
 

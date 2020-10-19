@@ -1,3 +1,20 @@
+    <section class="ls partner p-10 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4">
+                    {{ __('footer.nospartenaires') }}
+                </div>
+                <div class="col-md-2 col-lg-2 animate text-left" data-animation="slideInLeft">
+                    <img src="{{ asset('images/partners/artworksgroup.png') }}" alt="artworksgroup">
+                </div>
+                <div class="col-md-2 col-lg-2 animate text-left" data-animation="slideInLeft">
+                    <img src="{{ asset('images/partners/sah.png') }}" alt="sah">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <footer class="page_footer ds s-py-sm-20 s-pt-md-75 s-pb-md-50 s-py-lg-130 c-gutter-60 pb-20 half-section">
         <div class="container">
